@@ -154,31 +154,19 @@ ros2 topic echo /grapheqa/dsg_snapshot
 ```
 # 🔄 Planning Loop
 
-Hydra updates the scene graph
-
-DSG bridge converts it to JSON
-
-Frontier detector computes exploration candidates
-
-SceneGraphRosAdapter enriches the graph
-
-VLM planner reasons over:
-
-scene graph
-
-agent state
-
-recent image
-
-Planner outputs:
-
-confident answer → stop
-
-goto object → Nav2
-
-goto frontier → Nav2
-
-Loop continues until confidence threshold met
+1. Hydra updates the Dynamic Scene Graph.
+2. DSG bridge converts it into compact JSON.
+3. Frontier detector computes exploration candidates.
+4. SceneGraphRosAdapter enriches the graph.
+5. VLM planner reasons over:
+   - Scene graph structure
+   - Agent semantic state
+   - Recent visual observation
+6. Planner outputs:
+   - Confident answer → stop
+   - `Goto_Object` → Nav2
+   - `Goto_Frontier` → Nav2
+7. Loop continues until confidence threshold is met.
 
 # The robot is capable of:
 
