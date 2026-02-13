@@ -1,0 +1,3355 @@
+{
+    "564d876c-44f1-4915-8d4b-ab5a7728494f": {
+        "question": "What is the green object in the left of the garage?",
+        "choices": [
+            "A bicycle.",
+            "A ladder.",
+            "A box.",
+            "A hose"
+        ],
+        "answer": "A hose",
+        "answer_id": "D",
+        "enrich_labels": "green object"
+    },
+    "77c6644e-6018-4ef3-a683-276d3d2af67f": {
+        "question": "What is the bin with the yellow lid?",
+        "choices": [
+            "A compost bin.",
+            "A recycling bin",
+            "A trash bin.",
+            "A garden waste bin."
+        ],
+        "answer": "A recycling bin",
+        "answer_id": "B",
+        "enrich_labels": "bin yellow lid"
+    },
+    "a86ef102-5500-4fbf-8fae-cdbeb20a3b7b": {
+        "question": "What color is the car?",
+        "choices": [
+            "Red",
+            "Blue",
+            "Green",
+            "Pink"
+        ],
+        "answer": "Blue",
+        "answer_id": "B",
+        "enrich_labels": "car"
+    },
+    "438e8c6f-f27d-4d3d-b13d-6f41c2981c2a": {
+        "question": "What material is the floor?",
+        "choices": [
+            "wood",
+            "concrete",
+            "tile",
+            "carpet"
+        ],
+        "answer": "concrete",
+        "answer_id": "B",
+        "enrich_labels": "floor"
+    },
+    "9b4a7fbb-680d-4e39-8d60-7b1e521f3108": {
+        "question": "What is on the top shelf to the right side of the garage?",
+        "choices": [
+            "A tool box.",
+            "An ice cooler",
+            "A bicycle helmet.",
+            "A stack of paint cans."
+        ],
+        "answer": "An ice cooler",
+        "answer_id": "B",
+        "enrich_labels": "shelf"
+    },
+    "35bfcf60-4227-4bbb-9213-e1bf643b2325": {
+        "question": "Is the garbage bin open?",
+        "choices": [
+            "Yes.",
+            "No.",
+            "(Do not choose this option)",
+            "(Do not choose this option)"
+        ],
+        "answer": "Yes.",
+        "answer_id": "A",
+        "enrich_labels": "garbage bin"
+    },
+    "3a803472-47cd-4903-8380-d0b00efbbf08": {
+        "question": "Is the house doorway open or closed?",
+        "choices": [
+            "Closed.",
+            "Open",
+            "(Do not choose this option)",
+            "(Do not choose this option)"
+        ],
+        "answer": "Open",
+        "answer_id": "B",
+        "enrich_labels": "doorway"
+    },
+    "87019892-7a7f-4ce0-b1e6-4c0d6e87b90a": {
+        "question": "What can I use to water my plants?",
+        "choices": [
+            "A watering can.",
+            "A spray bottle.",
+            "A garden bucket.",
+            "The green hose"
+        ],
+        "answer": "The green hose",
+        "answer_id": "D",
+        "enrich_labels": "water plants"
+    },
+    "6fddec60-f221-4944-88c3-a132dfbfd1ed": {
+        "question": "What can I use to keep drinks cold at a picnic?",
+        "choices": [
+            "A bag of ice.",
+            "An insulated flask.",
+            "The blue cooler",
+            "A thermal picnic basket."
+        ],
+        "answer": "The blue cooler",
+        "answer_id": "C",
+        "enrich_labels": "cooler"
+    },
+    "7f15d867-8ba6-47fa-9bca-9d9ae64046b7": {
+        "question": "What type of car is in the garage?",
+        "choices": [
+            "An SUV.",
+            "A convertible.",
+            "A sedan",
+            "A hatchback."
+        ],
+        "answer": "A sedan",
+        "answer_id": "C",
+        "enrich_labels": "car garage"
+    },
+    "025257b6-8b7e-4f6f-aacc-1788069cbfad": {
+        "question": "Which bin should I put paper in?",
+        "choices": [
+            "The bin with the blue lid.",
+            "The bin with the yellow lid.",
+            "The bin with the green lid.",
+            "The bin with the black lid."
+        ],
+        "answer": "The bin with the yellow lid.",
+        "answer_id": "B",
+        "enrich_labels": "bin"
+    },
+    "28ea4932-55bf-44b3-9a48-73fde896b8ce": {
+        "question": "Where is the garage opener?",
+        "choices": [
+            "In the kitchen drawer.",
+            "To the left of the house doorway",
+            "On the key rack by the entry.",
+            "Inside the glove compartment of the car."
+        ],
+        "answer": "To the left of the house doorway",
+        "answer_id": "B",
+        "enrich_labels": "garage opener"
+    },
+    "30d3104b-cc05-4860-83e8-255fe8311662": {
+        "question": "Where is the broom?",
+        "choices": [
+            "On the kitchen counter.",
+            "Behind the backyard gate.",
+            "Inside the storage closet.",
+            "Below the garage door opener"
+        ],
+        "answer": "Below the garage door opener",
+        "answer_id": "D",
+        "enrich_labels": "broom"
+    },
+    "f0c66afc-5899-4b99-a25a-756f8e4d3796": {
+        "question": "What is hanging from the ceiling in the bedroom?",
+        "choices": [
+            "A ceiling fan",
+            "A chandelier.",
+            "A light fixture.",
+            "Wind chimes."
+        ],
+        "answer": "A ceiling fan",
+        "answer_id": "A",
+        "enrich_labels": "bedroom ceiling"
+    },
+    "5b1a106a-0732-43f9-b6b7-108e94ad3b07": {
+        "question": "What is above the bed?",
+        "choices": [
+            "A ceiling fan.",
+            "Two paintings",
+            "A bookshelf.",
+            "An overhead light fixture."
+        ],
+        "answer": "Two paintings",
+        "answer_id": "B",
+        "enrich_labels": "bed"
+    },
+    "c5a16c11-e855-4abe-bfe5-33df48982386": {
+        "question": "What is the color of the walls in the bedroom?",
+        "choices": [
+            "Red",
+            "Light blue",
+            "Green",
+            "Pink"
+        ],
+        "answer": "Light blue",
+        "answer_id": "B",
+        "enrich_labels": "bedroom walls"
+    },
+    "8d518bf1-6e9d-4e34-bbdc-bf84ef7e28e3": {
+        "question": "What is above the painting with the red flowers?",
+        "choices": [
+            "A light fixture.",
+            "A wooden shelf.",
+            "A neon sign.",
+            "An air vent"
+        ],
+        "answer": "An air vent",
+        "answer_id": "D",
+        "enrich_labels": "painting red flowers"
+    },
+    "decee266-85d8-46d6-940a-d8eb2af15bbe": {
+        "question": "Is there room for a desk in the bedroom?",
+        "choices": [
+            "Yes.",
+            "(Do not choose this option)",
+            "No",
+            "(Do not choose this option)"
+        ],
+        "answer": "No",
+        "answer_id": "C",
+        "enrich_labels": "bedroom"
+    },
+    "c496cdf1-762c-4403-8261-1e680de59db2": {
+        "question": "Are the closet lights turned on?",
+        "choices": [
+            "No.",
+            "Yes",
+            "(Do not choose this option)",
+            "(Do not choose this option)"
+        ],
+        "answer": "Yes",
+        "answer_id": "B",
+        "enrich_labels": "closet lights"
+    },
+    "c36331e1-d0b6-4f58-9f44-5590887b6677": {
+        "question": "Are both doors in the bedroom open?",
+        "choices": [
+            "No.",
+            "Yes",
+            "(Do not choose this option)",
+            "(Do not choose this option)"
+        ],
+        "answer": "No.",
+        "answer_id": "A",
+        "enrich_labels": "doors"
+    },
+    "cf0e325d-cbd9-4206-94e6-db3ca30d2b03": {
+        "question": "Where can I put my shoes?",
+        "choices": [
+            "Under the bed in a storage box.",
+            "In the hallway shoe cabinet.",
+            "On the hanging shoe rack in the closet",
+            "Near the back door on a shoe mat."
+        ],
+        "answer": "On the hanging shoe rack in the closet",
+        "answer_id": "C",
+        "enrich_labels": "shoes"
+    },
+    "ea4cf5a5-87e8-4f0e-8315-6ca5e8eebb43": {
+        "question": "How can I cool myself off?",
+        "choices": [
+            "Leave the refrigerator door open.",
+            "Drink a cold beverage.",
+            "Turn on the ceiling fan",
+            "Take a cold shower."
+        ],
+        "answer": "Turn on the ceiling fan",
+        "answer_id": "C",
+        "enrich_labels": "ceiling fan"
+    },
+    "7cd9b285-813c-4840-84de-37e05c028ea5": {
+        "question": "What does the painting in the bathroom depict?",
+        "choices": [
+            "A mountain landscape.",
+            "A bustling cityscape.",
+            "An abstract design.",
+            "A pier"
+        ],
+        "answer": "A pier",
+        "answer_id": "D",
+        "enrich_labels": "bathroom painting"
+    },
+    "a72012b4-5cc2-49a2-a947-2792da0d8b0d": {
+        "question": "What is depicted on the painting above the bed?",
+        "choices": [
+            "White flowers",
+            "A serene landscape.",
+            "A bustling cityscape.",
+            "Abstract shapes and colors."
+        ],
+        "answer": "White flowers",
+        "answer_id": "A",
+        "enrich_labels": "painting bed"
+    },
+    "69376f0e-ffd7-4d04-aad3-6089bacfc1d3": {
+        "question": "Where is the full body mirror?",
+        "choices": [
+            "In the bedroom by the door",
+            "In the hallway near the stairs.",
+            "Inside the closet behind the coats.",
+            "Next to the living room couch."
+        ],
+        "answer": "In the bedroom by the door",
+        "answer_id": "A",
+        "enrich_labels": "full body mirror"
+    },
+    "361460f8-257d-4fde-b777-0446047d6160": {
+        "question": "Where are the orange flowers?",
+        "choices": [
+            "In the kitchen on the windowsill.",
+            "In the living room on the table.",
+            "Outside the bedroom in a vase on the ground",
+            "On the porch in a hanging basket."
+        ],
+        "answer": "Outside the bedroom in a vase on the ground",
+        "answer_id": "C",
+        "enrich_labels": "orange flowers"
+    },
+    "08e8e5fd-31a3-466b-afd6-fa171f1d9de4": {
+        "question": "What is hanging from the ceiling in the bedroom?",
+        "choices": [
+            "A chandelier.",
+            "A dome light",
+            "A ceiling fan.",
+            "A paper lantern. "
+        ],
+        "answer": "A dome light",
+        "answer_id": "B",
+        "enrich_labels": "bedroom ceiling"
+    },
+    "6b8f1b52-25fa-47bc-a3a6-a2a43e834605": {
+        "question": "What is the gold object on the nightstand?",
+        "choices": [
+            "A candle holder.",
+            "A picture frame.",
+            "A nightlamp",
+            "A glass sculpture."
+        ],
+        "answer": "A nightlamp",
+        "answer_id": "C",
+        "enrich_labels": "gold object nightstand"
+    },
+    "0d7f83ac-e0ae-405c-bdea-4eb5a9d1f0a0": {
+        "question": "What material is the dining table?",
+        "choices": [
+            " Wood.",
+            " Metal.",
+            " Marble.",
+            "Glass"
+        ],
+        "answer": "Glass",
+        "answer_id": "D",
+        "enrich_labels": "dining table"
+    },
+    "eabae5f2-1193-4ac2-8862-8821156cb347": {
+        "question": "What color is the smoke detector?",
+        "choices": [
+            "Flamingo pink.",
+            "Yellow or off-white",
+            "Charcoal gray.",
+            "Ocean blue."
+        ],
+        "answer": "Yellow or off-white",
+        "answer_id": "B",
+        "enrich_labels": "smoke detector"
+    },
+    "8543767d-7d30-4307-96c2-20ef8ef48160": {
+        "question": "Is there space under the kitchen bar area?",
+        "choices": [
+            "(Do not choose this option)",
+            "(Do not choose this option)",
+            "Yes.",
+            "No."
+        ],
+        "answer": "No.",
+        "answer_id": "D",
+        "enrich_labels": "kitchen bar"
+    },
+    "cd5a15ff-d222-4745-8238-eee9afb27b79": {
+        "question": "What is in between the two white cabinets in the kitchen?",
+        "choices": [
+            "The toaster.",
+            "The mixer.",
+            "The coffee machine.",
+            "The microwave"
+        ],
+        "answer": "The microwave",
+        "answer_id": "D",
+        "enrich_labels": "white cabinets"
+    },
+    "2cee5bf8-1297-4cee-8e8b-d808503cdfb1": {
+        "question": "Is the bedroom window open?",
+        "choices": [
+            "No.",
+            "Yes.",
+            "(Do not choose this option)",
+            "(Do not choose this option)"
+        ],
+        "answer": "No.",
+        "answer_id": "A",
+        "enrich_labels": "window"
+    },
+    "9acfbdd3-bc51-4010-ae1e-a28a949731d5": {
+        "question": "Is the coat closet in the living room open?",
+        "choices": [
+            "(Do not choose this option)",
+            "Yes.",
+            "(Do not choose this option)",
+            "No."
+        ],
+        "answer": "No.",
+        "answer_id": "D",
+        "enrich_labels": "coat closet"
+    },
+    "bf4960d4-469f-49bc-8594-9b994049fa77": {
+        "question": "Where can I sit and eat if I don't want to use the dining table?",
+        "choices": [
+            "Relax on the living room couch. ",
+            "Dine in the garden patio. ",
+            "Take a seat on the balcony chair. ",
+            "Use the kitchen bar counter"
+        ],
+        "answer": "Use the kitchen bar counter",
+        "answer_id": "D",
+        "enrich_labels": "chair dining"
+    },
+    "6a13d4a2-4866-40e7-8f10-d1ec12573dc2": {
+        "question": "What can I use to cool down the living room?",
+        "choices": [
+            "The ceiling fan.",
+            "An air conditioner.",
+            "An open window.",
+            "The thermostat"
+        ],
+        "answer": "The thermostat",
+        "answer_id": "D",
+        "enrich_labels": "thermostat"
+    },
+    "41693f7e-4192-495e-9b4e-b238432c6424": {
+        "question": "Is this home on the first floor?",
+        "choices": [
+            "Yes",
+            "(Do not choose this option)",
+            "(Do not choose this option)",
+            "No"
+        ],
+        "answer": "No",
+        "answer_id": "D",
+        "enrich_labels": "room"
+    },
+    "f7b4bb17-549b-4e62-9586-ce3844198554": {
+        "question": "Does this house have pull lever door handles or knobs?",
+        "choices": [
+            "Pull lever",
+            "Knobs",
+            "Rings",
+            "Slide handles"
+        ],
+        "answer": "Pull lever",
+        "answer_id": "A",
+        "enrich_labels": "door handles"
+    },
+    "678d0eea-2f1e-41c4-bd6d-324e4819c63a": {
+        "question": "Which room should I go to see the car?",
+        "choices": [
+            "The bedroom",
+            "The garage.",
+            "The living room.",
+            "The basement."
+        ],
+        "answer": "The bedroom",
+        "answer_id": "A",
+        "enrich_labels": "car"
+    },
+    "a605c40f-96e7-4bec-a1cb-6d48e88e39cd": {
+        "question": "What is above the wooden table in the living room?",
+        "choices": [
+            "A golden chandelier.",
+            "A blue, white, and orange painting",
+            "A large rectangular mirror.",
+            "A wooden clock."
+        ],
+        "answer": "A blue, white, and orange painting",
+        "answer_id": "B",
+        "enrich_labels": "wooden table"
+    },
+    "3a5be057-47d2-4f78-98a9-729ef19b3d8b": {
+        "question": "What color are the pillows in the kitchen?",
+        "choices": [
+            "Red",
+            "Green",
+            "Blue",
+            "Yellow"
+        ],
+        "answer": "Blue",
+        "answer_id": "C",
+        "enrich_labels": "pillows kitchen"
+    },
+    "30dc765d-80c3-4901-9c69-65e6b48e254a": {
+        "question": "What color is the front door?",
+        "choices": [
+            "Red",
+            "Brown",
+            "Green",
+            "White"
+        ],
+        "answer": "Brown",
+        "answer_id": "B",
+        "enrich_labels": "door"
+    },
+    "f5a17a09-ce4b-4123-bf40-d2239cf38cb8": {
+        "question": "What is to the left of the frontdoor?",
+        "choices": [
+            "A staircase.",
+            "A storage closet",
+            "A coat hook.",
+            "A potted plant."
+        ],
+        "answer": "A storage closet",
+        "answer_id": "B",
+        "enrich_labels": "door"
+    },
+    "00c2be2a-1377-4fae-a889-30936b7890c3": {
+        "question": "What is hanging from the oven handle?",
+        "choices": [
+            "A dish cloth.",
+            "Oven mitts.",
+            "A towel",
+            "A pot holder."
+        ],
+        "answer": "A towel",
+        "answer_id": "C",
+        "enrich_labels": "oven"
+    },
+    "4dbd213e-56cd-481a-8ff5-ed9a8d636dbc": {
+        "question": "Is the light above the sink turned on?",
+        "choices": [
+            "No.",
+            "Yes",
+            "(Do not choose this option)",
+            "(Do not choose this option)"
+        ],
+        "answer": "Yes",
+        "answer_id": "B",
+        "enrich_labels": "sink light"
+    },
+    "6d132959-fd48-4fef-a736-4e5853849547": {
+        "question": "Where can I warm up?",
+        "choices": [
+            "In a cozy coffee shop.",
+            "Next to the fireplace",
+            "Under a warm blanket.",
+            "Beside a space heater."
+        ],
+        "answer": "Next to the fireplace",
+        "answer_id": "B",
+        "enrich_labels": "fireplace"
+    },
+    "ae19adeb-498a-4814-b955-e0af05623f9b": {
+        "question": "Where can I get recipes for what to cook?",
+        "choices": [
+            "The open cookbook on the kitchen counter top",
+            "A food blog online.",
+            "A family recipe book.",
+            "A cooking app on your phone."
+        ],
+        "answer": "The open cookbook on the kitchen counter top",
+        "answer_id": "A",
+        "enrich_labels": "cookbook"
+    },
+    "cbffc0cd-04aa-4686-97bf-887c0dc840bd": {
+        "question": "What is shown on the painting above the couch?",
+        "choices": [
+            "Landscape with a river",
+            "Cats",
+            "Horses",
+            "Portrait of a lady"
+        ],
+        "answer": "Horses",
+        "answer_id": "C",
+        "enrich_labels": "painting couch"
+    },
+    "4cc4212e-0db2-421f-8bb5-93817e58f9b4": {
+        "question": "Where can I get drinking water in the kitchen?",
+        "choices": [
+            "From the sink tap.",
+            "From a bottled water cooler.",
+            "From a filtered pitcher in the fridge.",
+            "From water dispenser in the fridge"
+        ],
+        "answer": "From water dispenser in the fridge",
+        "answer_id": "D",
+        "enrich_labels": "water kitchen"
+    },
+    "7ebac357-a338-4ce0-975a-62141e90a3c3": {
+        "question": "Where is the microwave?",
+        "choices": [
+            "Next to the refrigerator.",
+            "Under the kitchen cabinet.",
+            "Above the stovetop",
+            "In the pantry."
+        ],
+        "answer": "Above the stovetop",
+        "answer_id": "C",
+        "enrich_labels": "microwave"
+    },
+    "5d538466-397e-4b3b-8d40-d32bc80d5c0b": {
+        "question": "What is above the light switch?",
+        "choices": [
+            "A shelf with books.",
+            "A framed picture.",
+            "A smoke detector.",
+            "A circuit breaker box"
+        ],
+        "answer": "A circuit breaker box",
+        "answer_id": "D",
+        "enrich_labels": "light switch"
+    },
+    "0cbe9fd8-0b2c-40ce-9e9e-bd883fb7bff5": {
+        "question": "What white object can be partially seen in the room across the bedroom? ",
+        "choices": [
+            "A laundry machine",
+            "A refrigerator.",
+            "A pillow.",
+            "A lampshade."
+        ],
+        "answer": "A laundry machine",
+        "answer_id": "A",
+        "enrich_labels": "white object"
+    },
+    "55f022a0-2bd2-410b-9323-e077908a55d2": {
+        "question": "What color are the patio chairs?",
+        "choices": [
+            "Green.",
+            "Black.",
+            "Brown",
+            "White."
+        ],
+        "answer": "Brown",
+        "answer_id": "C",
+        "enrich_labels": "patio chairs"
+    },
+    "e87b90d9-77d5-4f99-b44a-ad1d11480334": {
+        "question": "What color is the bed frame?",
+        "choices": [
+            "White",
+            "Black.",
+            "Gray.",
+            "Blue."
+        ],
+        "answer": "White",
+        "answer_id": "A",
+        "enrich_labels": "bed frame"
+    },
+    "b60453d8-d274-4159-b368-96e8ad66575f": {
+        "question": "What is across the dishwasher?",
+        "choices": [
+            "A fridge",
+            "A kitchen door.",
+            "A window.",
+            "A pantry."
+        ],
+        "answer": "A fridge",
+        "answer_id": "A",
+        "enrich_labels": "dishwasher"
+    },
+    "4af07938-5cb6-4784-922d-893dc57ca225": {
+        "question": "What appliance is below the hanging cabinets on the left side of the kitchen?",
+        "choices": [
+            "A microwave.",
+            "A coffee maker.",
+            "A blender.",
+            "A toaster oven"
+        ],
+        "answer": "A toaster oven",
+        "answer_id": "D",
+        "enrich_labels": "hanging cabinets"
+    },
+    "bb1f77da-2f24-45e4-af20-10d82c300c06": {
+        "question": "Are the drapes in the bedroom open or closed?",
+        "choices": [
+            "Closed.",
+            "(Do not choose this option)",
+            "Open",
+            "(Do not choose this option)"
+        ],
+        "answer": "Open",
+        "answer_id": "C",
+        "enrich_labels": "drapes"
+    },
+    "0785d52a-eb84-4159-9aff-54b20f79fa5f": {
+        "question": "Are the blinds in the living room all open or all closed?",
+        "choices": [
+            "All are closed.",
+            "All are open.",
+            "Neither, some are open some are closed",
+            "They are partially open."
+        ],
+        "answer": "Neither, some are open some are closed",
+        "answer_id": "C",
+        "enrich_labels": "blinds"
+    },
+    "da1d2adf-7888-4c94-80d7-b84f09a25682": {
+        "question": "Where would the garbage disposal switch be located?",
+        "choices": [
+            "Under the sink cabinet door.",
+            "The switches to the right of the sink",
+            "On the kitchen island.",
+            "Inside the drawer above the sink."
+        ],
+        "answer": "The switches to the right of the sink",
+        "answer_id": "B",
+        "enrich_labels": "garbage disposal switch"
+    },
+    "e5c3d2bd-ef67-46a5-badc-f6c9f1421be2": {
+        "question": "If the lights suddenly go out, where should I go to fix it?",
+        "choices": [
+            "The circuit breaker box in the garage.",
+            "The circuit breaker box to the left of the laundry room",
+            "Under the kitchen sink.",
+            "Behind the living room couch."
+        ],
+        "answer": "The circuit breaker box to the left of the laundry room",
+        "answer_id": "B",
+        "enrich_labels": "circuit breaker box"
+    },
+    "9d9d4db5-7028-48a6-a62b-e62ec13d0393": {
+        "question": "What kind of staircase does this home have?",
+        "choices": [
+            "A wooden staircase.",
+            "A marble staircase.",
+            "A glass staircase.",
+            "A spiral staircase"
+        ],
+        "answer": "A spiral staircase",
+        "answer_id": "D",
+        "enrich_labels": "staircase"
+    },
+    "13d097e7-12c7-48e0-92c4-9667fc7f9c60": {
+        "question": "Where can I get a drink of water?",
+        "choices": [
+            "At the kitchen sink.",
+            "From the garden hose.",
+            "From the water dispenser in the fridge",
+            "At the public water fountain."
+        ],
+        "answer": "From the water dispenser in the fridge",
+        "answer_id": "C",
+        "enrich_labels": "water"
+    },
+    "b38045c3-cf3d-43e3-8fee-a085b89a4d3a": {
+        "question": "Where are the paper towels?",
+        "choices": [
+            "Next to the refrigerator.",
+            "Above the dishwasher",
+            "Under the sink.",
+            "On the kitchen island."
+        ],
+        "answer": "Above the dishwasher",
+        "answer_id": "B",
+        "enrich_labels": "paper towels"
+    },
+    "5a8b3936-43e0-4474-ac15-efaf488265a1": {
+        "question": "Where is the umbrella?",
+        "choices": [
+            "In the hallway closet.",
+            "Under the kitchen table.",
+            "Next to the front door.",
+            "On the balcony outside"
+        ],
+        "answer": "On the balcony outside",
+        "answer_id": "D",
+        "enrich_labels": "umbrella"
+    },
+    "406684f7-f87a-4360-8c90-42725b8fcfd2": {
+        "question": "What color is the curtain over the sink?",
+        "choices": [
+            "Yellow",
+            "Pink",
+            "Green",
+            "White"
+        ],
+        "answer": "Green",
+        "answer_id": "C",
+        "enrich_labels": "curtain sink"
+    },
+    "06c9b25c-b117-4b8f-a052-6fd71b2bb043": {
+        "question": "What kind of pants is the man in the mirror wearing?",
+        "choices": [
+            "Khakis.",
+            "Cargo pants.",
+            "Sweatpants.",
+            "Jeans"
+        ],
+        "answer": "Jeans",
+        "answer_id": "D",
+        "enrich_labels": "pants mirror"
+    },
+    "08c5d44c-4500-4c11-a2ca-d2cf924c0b46": {
+        "question": "Is the coffee pot full or empty?",
+        "choices": [
+            "Full",
+            "Empty.",
+            "Half-full.",
+            "Overflowing."
+        ],
+        "answer": "Full",
+        "answer_id": "A",
+        "enrich_labels": "coffee pot"
+    },
+    "7ad70423-200c-42a8-8e6a-c471f171782e": {
+        "question": "It's too bright in the living room, how can I make it darker?",
+        "choices": [
+            "Install blackout curtains.",
+            "Switch off the overhead lights.",
+            "Lower the shades over the porch door.",
+            "Replace bright bulbs with dimmable ones."
+        ],
+        "answer": "Lower the shades over the porch door.",
+        "answer_id": "C",
+        "enrich_labels": "shades curtains"
+    },
+    "5fc88f40-890b-4a30-8b97-d404e8f5c330": {
+        "question": "If I sit in the armchair in the living room, what animal can I touch with my right hand?",
+        "choices": [
+            "An elephant",
+            "A tiger.",
+            "A parrot.",
+            "A raccoon."
+        ],
+        "answer": "An elephant",
+        "answer_id": "A",
+        "enrich_labels": "armchair animal"
+    },
+    "19fd09b1-acf4-461d-9cf4-e375a062bee7": {
+        "question": "Where is the octagonal mirror?",
+        "choices": [
+            "In the living room.",
+            "In the first bedroom",
+            "In the hallway closet.",
+            "In the attic."
+        ],
+        "answer": "In the first bedroom",
+        "answer_id": "B",
+        "enrich_labels": "octagonal mirror"
+    },
+    "e6fb0c2e-5f92-4835-ba38-6af958b7a1d3": {
+        "question": "What is behind the armchair in the living room?",
+        "choices": [
+            "A bookshelf.",
+            "A dog bed",
+            "A small table.",
+            "A potted plant."
+        ],
+        "answer": "A dog bed",
+        "answer_id": "B",
+        "enrich_labels": "armchair"
+    },
+    "a36ab369-6f78-4311-a943-b6862cd28b55": {
+        "question": "What is hanging on the wall in the living room?",
+        "choices": [
+            "A painting.",
+            "A mirror.",
+            "A clock",
+            "A family portrait."
+        ],
+        "answer": "A clock",
+        "answer_id": "C",
+        "enrich_labels": "wall hanging"
+    },
+    "0df60236-15ad-4166-a31a-a98d14214fdb": {
+        "question": "What type of numbers are on the clock?",
+        "choices": [
+            "Arabic numerals.",
+            "Binary numbers.",
+            "Roman numerals",
+            "Decimal digits."
+        ],
+        "answer": "Roman numerals",
+        "answer_id": "C",
+        "enrich_labels": "clock"
+    },
+    "01fcc568-f51e-4e12-b976-5dc8d554135a": {
+        "question": "Where is the teddy bear?",
+        "choices": [
+            "On the bookshelf in the study.",
+            "In the dog bed in the living room.",
+            "Under the dining table.",
+            "On top of the refrigerator."
+        ],
+        "answer": "In the dog bed in the living room.",
+        "answer_id": "B",
+        "enrich_labels": "teddy bear"
+    },
+    "6852b358-4820-471d-9263-d32ef0cecd0b": {
+        "question": "Where is the wreath?",
+        "choices": [
+            "Hanging on the front door.",
+            "On the fireplace mantle.",
+            "Above the dining table.",
+            "In the upstairs hallway."
+        ],
+        "answer": "Hanging on the front door.",
+        "answer_id": "A",
+        "enrich_labels": "wreath"
+    },
+    "48d8aa7f-61cb-469b-9b6d-2549d1210281": {
+        "question": "What is the grey item on the bed?",
+        "choices": [
+            "A pillow.",
+            "A blanket",
+            "A plush toy.",
+            "A sheet."
+        ],
+        "answer": "A blanket",
+        "answer_id": "B",
+        "enrich_labels": "grey bed"
+    },
+    "45a5e082-a9e9-47ca-a036-dfafba92b16c": {
+        "question": "What color is the countertop on the porch?",
+        "choices": [
+            "White.",
+            "Black",
+            "Red.",
+            "Blue."
+        ],
+        "answer": "Black",
+        "answer_id": "B",
+        "enrich_labels": "countertop porch"
+    },
+    "013bb857-f47d-4b50-add4-023cc4ff414c": {
+        "question": "What material are the stools in the kitchen made out of?",
+        "choices": [
+            "Plastic.",
+            "Leather",
+            "Wood.",
+            "Metal."
+        ],
+        "answer": "Leather",
+        "answer_id": "B",
+        "enrich_labels": "stools"
+    },
+    "ba5f1c9b-9a41-4a84-829b-f9b8ccd19b69": {
+        "question": "Where do I reach for laundry detergent?",
+        "choices": [
+            "For the shelf above the washing machine.",
+            "In the cupboard under the sink.",
+            "In the closet next to the dryer.",
+            "In the utility room near the broom."
+        ],
+        "answer": "For the shelf above the washing machine.",
+        "answer_id": "A",
+        "enrich_labels": "washing machine detergent"
+    },
+    "f17869a2-2a4d-4ce4-b262-cb69618e3394": {
+        "question": "Is the toilet seat open or closed?",
+        "choices": [
+            "Closed.",
+            "Open",
+            "(Do not choose this option)",
+            "(Do not choose this option)"
+        ],
+        "answer": "Closed.",
+        "answer_id": "A",
+        "enrich_labels": "toilet seat"
+    },
+    "e0d20472-8fa6-4e8d-880d-22d4eed3fbb8": {
+        "question": "Is the television turned on or off?",
+        "choices": [
+            "Off.",
+            "(Do not choose this option)",
+            "(Do not choose this option)",
+            "On"
+        ],
+        "answer": "On",
+        "answer_id": "D",
+        "enrich_labels": "television"
+    },
+    "fc9d2a18-6197-4c8b-abd8-be0c493e5450": {
+        "question": "I want to check my outfit for a dinner party, how can I do this?",
+        "choices": [
+            "In the hallway mirror near the stairs.",
+            "By taking a selfie in the living room.",
+            "Using the phone camera in the bedroom.",
+            "Using the large mirror outside the first bedroom."
+        ],
+        "answer": "Using the large mirror outside the first bedroom.",
+        "answer_id": "D",
+        "enrich_labels": "mirror"
+    },
+    "1b36e675-74ff-46ad-8caa-c33da46a5a67": {
+        "question": "I want to host a dinner party on a summer evening, where should I set the table?",
+        "choices": [
+            "On the table on the porch.",
+            "Beneath the starry sky in the backyard.",
+            "In the dining room with the windows open.",
+            "Under the garden pergola with twinkling lights."
+        ],
+        "answer": "On the table on the porch.",
+        "answer_id": "A",
+        "enrich_labels": "dinner table porch"
+    },
+    "d3742804-8363-4346-a622-5bcaeffb25e9": {
+        "question": "Where is the round mirror?",
+        "choices": [
+            "In the hallway closet.",
+            "Behind the living room sofa.",
+            "On the wall above the head of the bed in the first bedroom.",
+            "Inside the attic near the window."
+        ],
+        "answer": "On the wall above the head of the bed in the first bedroom.",
+        "answer_id": "C",
+        "enrich_labels": "round mirror"
+    },
+    "dfdc3b36-d98f-42a7-b2ea-dceb4af1794a": {
+        "question": "Where is the ceiling fan?",
+        "choices": [
+            "Above the bed in the second bedroom",
+            "Near the window in the living room.",
+            "In the bathroom next to the mirror.",
+            "In the hallway outside the kitchen."
+        ],
+        "answer": "Above the bed in the second bedroom",
+        "answer_id": "A",
+        "enrich_labels": "ceiling fan"
+    },
+    "f2063c53-72d8-4cd8-b2cb-78ceee86449d": {
+        "question": "what is kept on the tray in the kitchen counter?",
+        "choices": [
+            "apple",
+            "banana",
+            "carrot",
+            "cookie"
+        ],
+        "answer": "banana",
+        "answer_id": "B",
+        "enrich_labels": "tray kitchen counter"
+    },
+    "c1b2ccf5-b56d-4ced-9cec-eaf62fedc675": {
+        "question": "what color are the numbers written on the wall clock?",
+        "choices": [
+            "black",
+            "red",
+            "white",
+            "blue"
+        ],
+        "answer": "white",
+        "answer_id": "C",
+        "enrich_labels": "wall clock"
+    },
+    "de038605-c441-4a30-968b-7815bad3a3c9": {
+        "question": "what color are the chairs?",
+        "choices": [
+            "brown",
+            "red",
+            "blue",
+            "green"
+        ],
+        "answer": "brown",
+        "answer_id": "A",
+        "enrich_labels": "chairs"
+    },
+    "a5c5bb29-700a-4ef5-b17d-aaa47bb0ef3f": {
+        "question": "what is between the fruit bowl and knife set?",
+        "choices": [
+            "a cutting board",
+            "a container of spices",
+            "a jar of honey",
+            "a bunch of bananas"
+        ],
+        "answer": "a container of spices",
+        "answer_id": "B",
+        "enrich_labels": "fruit bowl knife set"
+    },
+    "b05e7b30-6a4d-4381-9d05-a42ed0c90e30": {
+        "question": "is the table in the living room completely clean?",
+        "choices": [
+            "(Do not choose this option)",
+            "no",
+            "(Do not choose this option)",
+            "Yes"
+        ],
+        "answer": "no",
+        "answer_id": "B",
+        "enrich_labels": "table"
+    },
+    "bd5e9e4e-c6be-40e9-a923-fcc6aa321947": {
+        "question": "is the television on or off?",
+        "choices": [
+            "(Do not choose this option)",
+            "off",
+            "(Do not choose this option)",
+            "on"
+        ],
+        "answer": "off",
+        "answer_id": "B",
+        "enrich_labels": "television"
+    },
+    "d8183087-f3dd-47c1-b985-733923edc4a0": {
+        "question": "is the fan on or off?",
+        "choices": [
+            "(Do not choose this option)",
+            "(Do not choose this option)",
+            "off",
+            "on"
+        ],
+        "answer": "off",
+        "answer_id": "C",
+        "enrich_labels": "fan"
+    },
+    "109eaad4-6e68-4da1-8f98-a0d8589ec26d": {
+        "question": "where can I keep a photo frame?",
+        "choices": [
+            "on the wall next to your favorite painting.",
+            "on your bedside table for easy viewing.",
+            "on a shelf in the living room for guests to admire.",
+            "on the counter below the television with other frames"
+        ],
+        "answer": "on the counter below the television with other frames",
+        "answer_id": "D",
+        "enrich_labels": "photo frame"
+    },
+    "67cd7145-4b1f-4b2a-a698-8e4738cb7c41": {
+        "question": "where can I keep a couple of apples?",
+        "choices": [
+            "on the fruit basket in the kitchen counter.",
+            "in the refrigerator.",
+            "in the pantry.",
+            "on the dining table."
+        ],
+        "answer": "on the fruit basket in the kitchen counter.",
+        "answer_id": "A",
+        "enrich_labels": "apples"
+    },
+    "d4c10718-fd57-4db0-93c1-b54deb4b1b25": {
+        "question": "how can I clean my hands?",
+        "choices": [
+            "there is a sink in the kitchen",
+            "Use a hand sanitizer. ",
+            "Wipe with a wet towel.",
+            "Rinse at the bathroom sink."
+        ],
+        "answer": "there is a sink in the kitchen",
+        "answer_id": "A",
+        "enrich_labels": "sink"
+    },
+    "1dcdd225-eba2-4ba1-97b6-c4cdc7ca4e9b": {
+        "question": "where can I keep a new knife I got?",
+        "choices": [
+            "In the utensil drawer near the sink.",
+            "On a magnetic strip mounted on the wall.",
+            "there is a knife holder in the kitchen counter next to the gas stove.",
+            "In the cutlery section of the kitchen cupboard."
+        ],
+        "answer": "there is a knife holder in the kitchen counter next to the gas stove.",
+        "answer_id": "C",
+        "enrich_labels": "knife kitchen"
+    },
+    "b93ea8d4-4b9a-46a3-b9b4-3d79c5ce074e": {
+        "question": "where is the paper roll?",
+        "choices": [
+            "In the bathroom above the sink.",
+            "On the dining table near the window.",
+            "Inside the cupboard next to the fridge.",
+            "In the kitchen counter right next to the gas stove"
+        ],
+        "answer": "In the kitchen counter right next to the gas stove",
+        "answer_id": "D",
+        "enrich_labels": "paper roll"
+    },
+    "90ab6389-d85e-42ad-b44a-af4849da2631": {
+        "question": "where is the clock?",
+        "choices": [
+            "in the bedroom above the nightstand.",
+            "in the living room hallway next to the television",
+            "on the kitchen shelf beside the microwave.",
+            "hanging in the bathroom near the window."
+        ],
+        "answer": "in the living room hallway next to the television",
+        "answer_id": "B",
+        "enrich_labels": "clock"
+    },
+    "734c3095-4a19-4659-9cd9-9d07cef6a909": {
+        "question": "what is on the chair?",
+        "choices": [
+            "a soft pillow",
+            "an old book",
+            "a red sweater",
+            "a folded blanket"
+        ],
+        "answer": "a soft pillow",
+        "answer_id": "A",
+        "enrich_labels": "chair"
+    },
+    "2ed999e1-9553-4263-9645-995b6f6a96fc": {
+        "question": "what is right next to the chair?",
+        "choices": [
+            "a small side table",
+            "a potted plant",
+            "a bookshelf",
+            "a standing lamp"
+        ],
+        "answer": "a small side table",
+        "answer_id": "A",
+        "enrich_labels": "chair"
+    },
+    "5bcf7dfd-d346-4936-850b-dc1ef49b93cf": {
+        "question": "is the outside door open or closed?",
+        "choices": [
+            "closed.",
+            "(Do not choose this option)",
+            "open",
+            "(Do not choose this option)"
+        ],
+        "answer": "open",
+        "answer_id": "C",
+        "enrich_labels": "door"
+    },
+    "3af8c1fb-bcde-4a18-83d1-c811785a3d48": {
+        "question": "is the table in the living room clean?",
+        "choices": [
+            "no",
+            "(Do not choose this option)",
+            "(Do not choose this option)",
+            "yes"
+        ],
+        "answer": "yes",
+        "answer_id": "D",
+        "enrich_labels": "table"
+    },
+    "a14d66fc-180b-49df-a84a-d0fc12ab8ff7": {
+        "question": "is the outside door open or closed?",
+        "choices": [
+            "open",
+            "White",
+            "Blue",
+            "Green"
+        ],
+        "answer": "open",
+        "answer_id": "A",
+        "enrich_labels": "door"
+    },
+    "d09b5f50-ade2-477f-93bb-9f2f27f4fa71": {
+        "question": "where can I sit in the living room?",
+        "choices": [
+            "on the sofa",
+            "on the armchair.",
+            "on the carpet.",
+            "near the window."
+        ],
+        "answer": "on the sofa",
+        "answer_id": "A",
+        "enrich_labels": "chair couch"
+    },
+    "11da38f3-c32f-4443-bd33-6a2c1ec22a64": {
+        "question": "what is special about the wall in the living room?",
+        "choices": [
+            "It's painted with glow-in-the-dark paint.",
+            "it seems to be made of stone",
+            "It has a hidden bookshelf embedded within it.",
+            "It's covered with vintage wallpaper."
+        ],
+        "answer": "it seems to be made of stone",
+        "answer_id": "B",
+        "enrich_labels": "wall"
+    },
+    "cdb2760c-33d0-4e19-8ddc-494f9874dfb3": {
+        "question": "where is the standing lamp?",
+        "choices": [
+            "in the corner of the living room.",
+            "next to the bed in the bedroom",
+            "beside the reading chair in the study.",
+            "near the dining table in the dining room."
+        ],
+        "answer": "next to the bed in the bedroom",
+        "answer_id": "B",
+        "enrich_labels": "standing lamp"
+    },
+    "911693d9-2d28-4ff2-83a9-c67b83753831": {
+        "question": "What can be seen through the window in the living room?",
+        "choices": [
+            "A park bench.",
+            "Trees and hills",
+            "Flowing river.",
+            "City skyline."
+        ],
+        "answer": "Trees and hills",
+        "answer_id": "B",
+        "enrich_labels": "window"
+    },
+    "9b2d06e5-ca78-4519-a9ca-75c06209b770": {
+        "question": "Where is the fireplace?",
+        "choices": [
+            "In the bedroom, by the wardrobe. ",
+            "In the kitchen, next to the fridge.",
+            "In the living room, to the right of the radiator and window",
+            "In the study, aligned with the bookshelf."
+        ],
+        "answer": "In the living room, to the right of the radiator and window",
+        "answer_id": "C",
+        "enrich_labels": "fireplace"
+    },
+    "f2e82760-5c3c-41b1-88b6-85921b9e7b32": {
+        "question": "What is the white object on the wall above the TV?",
+        "choices": [
+            "Shelf",
+            "Picture frame",
+            "Clock",
+            "Air conditioning unit"
+        ],
+        "answer": "Air conditioning unit",
+        "answer_id": "D"
+    },
+    "7447d782-d1a7-4c87-86dc-b5eafc5a0f76": {
+        "question": "What material is the ceiling in the living room?",
+        "choices": [
+            " Popcorn texture",
+            " Plaster",
+            "Wood panel",
+            " Concrete"
+        ],
+        "answer": "Wood panel",
+        "answer_id": "C"
+    },
+    "e2ccf6f4-22a9-47d1-ab8d-a05a13435b82": {
+        "question": "What color is the staircase railing?",
+        "choices": [
+            "Red",
+            "Black",
+            "Brown",
+            "White"
+        ],
+        "answer": "Brown",
+        "answer_id": "C"
+    },
+    "c841bb52-1cec-46d7-bb83-8c99b5c66fa8": {
+        "question": "What is in between the two picture frames on the blue wall in the living room?",
+        "choices": [
+            "The fireplace.",
+            "A bookshelf.",
+            "A mirror.",
+            "The TV"
+        ],
+        "answer": "The TV",
+        "answer_id": "D"
+    },
+    "79344680-6b45-4531-8789-ad0f5ef85b3b": {
+        "question": "Is there room on the dining table to eat?",
+        "choices": [
+            "No.",
+            "Yes",
+            "Maybe.",
+            "Only for two."
+        ],
+        "answer": "Yes",
+        "answer_id": "B"
+    },
+    "500e6924-0ea3-45c8-89ce-db3d37e142bf": {
+        "question": "Is the dining table set with table mats?",
+        "choices": [
+            "No.",
+            "Sometimes.",
+            "Yes.",
+            "Depends on the diner."
+        ],
+        "answer": "Yes.",
+        "answer_id": "C"
+    },
+    "ecad68d2-a16f-4a3e-b8a1-a70ec1c5cf00": {
+        "question": "Is the front door open?",
+        "choices": [
+            "Yes.",
+            "I don't know.",
+            "Check yourself.",
+            "No"
+        ],
+        "answer": "No",
+        "answer_id": "D"
+    },
+    "5c1d30b9-5827-49fc-b74f-5ee9909a75b8": {
+        "question": "What should I do to cool down?",
+        "choices": [
+            "Drink a cold beverage.",
+            "Take a cool shower.",
+            "Turn on the AC unit",
+            "Sit in a shaded area."
+        ],
+        "answer": "Turn on the AC unit",
+        "answer_id": "C"
+    },
+    "8d7f1dd7-9764-4603-918b-58eefcb0b10e": {
+        "question": "What can I do to increase the speed of the ceiling fan?",
+        "choices": [
+            "Adjust the fan speed setting using the remote control.",
+            "Turn the dial on the switch panel next to the front door",
+            "Ensure the fan blades are clean and balanced.",
+            "Check if the fan's pull chain is set to the highest speed."
+        ],
+        "answer": "Turn the dial on the switch panel next to the front door",
+        "answer_id": "B"
+    },
+    "c8808989-9b62-4764-814e-520fd40c22cd": {
+        "question": "What type of ceiling is in the living room?",
+        "choices": [
+            "A flat ceiling.",
+            "A vaulted ceiling",
+            "A coffered ceiling.",
+            "A tray ceiling."
+        ],
+        "answer": "A vaulted ceiling",
+        "answer_id": "B"
+    },
+    "0c6b5dce-8baf-4d95-b7ca-26fe915c4bd7": {
+        "question": "What is the large, round, and black object on the wall?",
+        "choices": [
+            "A mirror.",
+            "A clock",
+            "A picture frame.",
+            "A TV screen."
+        ],
+        "answer": "A clock",
+        "answer_id": "B"
+    },
+    "e816a1f9-af6c-4901-8d54-4ddaa2a60dc3": {
+        "question": "What shape are the door knobs?",
+        "choices": [
+            "Round or spherical",
+            "Square",
+            "Oval",
+            "Hexagonal"
+        ],
+        "answer": "Round or spherical",
+        "answer_id": "A"
+    },
+    "19baf626-2db5-4fb0-a7ad-02896fa77b18": {
+        "question": "What type of flooring does this house feature?",
+        "choices": [
+            "Carpet tiles.",
+            "Ceramic tiles.",
+            "Laminate.",
+            "Wood panels"
+        ],
+        "answer": "Wood panels",
+        "answer_id": "D"
+    },
+    "b6dcf043-30a6-4b4e-9787-9b29bd1b1703": {
+        "question": "What is to the left of the mirror?",
+        "choices": [
+            "A stack of books.",
+            "A plant in a tall vase",
+            "A small wooden sculpture.",
+            "A framed photograph."
+        ],
+        "answer": "A plant in a tall vase",
+        "answer_id": "B"
+    },
+    "5460114d-e885-4eae-8bdc-a273deb3df0a": {
+        "question": "What is to the left of the staircase?",
+        "choices": [
+            "A plant",
+            "A painting of a landscape",
+            "A storage closet",
+            "A window"
+        ],
+        "answer": "A storage closet",
+        "answer_id": "C"
+    },
+    "d16b6600-beb5-4bf4-8045-d018b75eefb1": {
+        "question": "Are the cabinets below the mirror closed?",
+        "choices": [
+            "Yes.",
+            "No.",
+            "Partially.",
+            "Can't tell from the picture."
+        ],
+        "answer": "Yes.",
+        "answer_id": "A"
+    },
+    "21f8ed6a-4ca4-465f-986d-c4390984d8a9": {
+        "question": "Is the bedroom door open?",
+        "choices": [
+            "No.",
+            "Yes",
+            "Maybe.",
+            "Not sure."
+        ],
+        "answer": "Yes",
+        "answer_id": "B"
+    },
+    "501c3264-ca08-487d-a038-0e83968359f6": {
+        "question": "Where is the mirror?",
+        "choices": [
+            "On the left wall, opposite the bookshelf.",
+            "In the hallway, near the coat rack.",
+            "Next to the staircase above the dark brown cabinet",
+            "Beside the large window overlooking the garden."
+        ],
+        "answer": "Next to the staircase above the dark brown cabinet",
+        "answer_id": "C"
+    },
+    "23fb241e-989a-4299-a3fb-8d41f7156397": {
+        "question": "What is the object to the left of the bed?",
+        "choices": [
+            "A radiator",
+            "A bookshelf.",
+            "An armchair.",
+            "A nightstand."
+        ],
+        "answer": "A radiator",
+        "answer_id": "A"
+    },
+    "96d7f5ef-14b2-432a-8b85-21a0621e41a4": {
+        "question": "What is above the sink?",
+        "choices": [
+            "A cabinet ",
+            "A clock ",
+            "A mirror ",
+            "A window "
+        ],
+        "answer": "A mirror ",
+        "answer_id": "C"
+    },
+    "915cb310-31be-4114-846c-242fc59b581d": {
+        "question": "What shape is the mirror?",
+        "choices": [
+            "A circle.",
+            "An oval",
+            "A rectangle.",
+            "A hexagon."
+        ],
+        "answer": "An oval",
+        "answer_id": "B"
+    },
+    "d7019200-5300-459e-a2c1-b54d5ec0a80b": {
+        "question": "What color is the bed comforter?",
+        "choices": [
+            "Brown",
+            "Blue.",
+            "White.",
+            "Red."
+        ],
+        "answer": "Brown",
+        "answer_id": "A"
+    },
+    "6be2fe87-f20c-48a2-a8fb-161362d86e2a": {
+        "question": "Does the bedroom have a lot of furniture?",
+        "choices": [
+            "Yes.",
+            "It has some.",
+            "No",
+            "Not really."
+        ],
+        "answer": "No",
+        "answer_id": "C"
+    },
+    "79dfe5ce-8a8c-47f3-a606-ab5ab4591c56": {
+        "question": "Is there space under the bed for storage?",
+        "choices": [
+            "No.",
+            "Yes",
+            "Maybe, but only small items will fit.",
+            "It depends on the bed height."
+        ],
+        "answer": "Yes",
+        "answer_id": "B"
+    },
+    "bbb83d84-289c-4f1d-a470-772e5c823a90": {
+        "question": "Is the patio door open?",
+        "choices": [
+            "Yes.",
+            "It's ajar.",
+            "I can't tell.",
+            "No."
+        ],
+        "answer": "No.",
+        "answer_id": "D"
+    },
+    "41ad08e1-cb46-4599-8beb-def3b0f91e34": {
+        "question": "Are the lights turned on in the bedroom?",
+        "choices": [
+            "No.",
+            "Yes.",
+            "Maybe.",
+            "I don't know."
+        ],
+        "answer": "Yes.",
+        "answer_id": "B"
+    },
+    "9ca30022-6b6c-4950-b91d-e90ee80f49d8": {
+        "question": "Where can I take a nap?",
+        "choices": [
+            "On the bed in the bedroom",
+            "On a hammock in the garden.",
+            "On the couch in the living room.",
+            "Under a tree in the park."
+        ],
+        "answer": "On the bed in the bedroom",
+        "answer_id": "A"
+    },
+    "1015cab7-827a-437c-ab86-6e4c2a9dd083": {
+        "question": "What style of paintings are put up in the bedrrom?",
+        "choices": [
+            "Abstract",
+            "Realism.",
+            "Impressionism.",
+            "Surrealism."
+        ],
+        "answer": "Abstract",
+        "answer_id": "A"
+    },
+    "9fc2d987-fc9c-4771-a0d4-07d24e2b7910": {
+        "question": "Where is the cartoon cat?",
+        "choices": [
+            "Its drawn on the pink photo frame",
+            "It's on the living room couch.",
+            "It's hiding under the bed.",
+            "It's drawn on the kitchen wall."
+        ],
+        "answer": "Its drawn on the pink photo frame",
+        "answer_id": "A"
+    },
+    "f776a834-1e21-4442-8834-18b6f9d6cfad": {
+        "question": "Where is the orange painting?",
+        "choices": [
+            "On the living room wall.",
+            "Above the bed",
+            "Under the blue table.",
+            "Next to the bookshelf."
+        ],
+        "answer": "Above the bed",
+        "answer_id": "B"
+    },
+    "06745779-f1b8-458b-8daa-ccc18d8958c8": {
+        "question": "What is at the center of the breakfast table?",
+        "choices": [
+            "A steaming cup of coffee.",
+            "A vase with flowers.",
+            "A large fruit bowl",
+            "A plate of scrambled eggs."
+        ],
+        "answer": "A large fruit bowl",
+        "answer_id": "C"
+    },
+    "9a0fe947-4c0b-47b8-a1dc-414f2d555c67": {
+        "question": "What is above the red couch?",
+        "choices": [
+            "A) Ceiling Fan",
+            "Paintings",
+            "B) Light Fixture",
+            "C) Bookshelf"
+        ],
+        "answer": "Paintings",
+        "answer_id": "B"
+    },
+    "e8a806b3-bf39-4854-84bd-72c25493d8cd": {
+        "question": "What is the shape of the panels on the floor?",
+        "choices": [
+            "Rectangle.",
+            "Circle.",
+            "Triangle.",
+            "Square"
+        ],
+        "answer": "Square",
+        "answer_id": "D"
+    },
+    "884e2405-85f6-446f-a0ab-a03e537e5184": {
+        "question": "What is in the center of the room with the stairs?",
+        "choices": [
+            "A red couch",
+            "A wooden table.",
+            "A glass chandelier.",
+            "A large rug."
+        ],
+        "answer": "A red couch",
+        "answer_id": "A"
+    },
+    "cec83622-f735-435a-b054-1e201a48652c": {
+        "question": "Is the kitchen countertop clean?",
+        "choices": [
+            "Yes.",
+            "No.",
+            "Could be cleaner.",
+            "I can't tell."
+        ],
+        "answer": "Yes.",
+        "answer_id": "A"
+    },
+    "9104773d-a2f0-4be3-a370-f7bf6e242ff7": {
+        "question": "Is the front door open or closed?",
+        "choices": [
+            "Closed.",
+            "Open",
+            "Ajar.",
+            "Locked."
+        ],
+        "answer": "Open",
+        "answer_id": "B"
+    },
+    "65fbee94-eb23-40b3-84c3-32129c95b52d": {
+        "question": "Where can I wash my hands?",
+        "choices": [
+            "In the bathroom.",
+            "In the sink in the kitchen",
+            "At a public restroom.",
+            "In the garden hose."
+        ],
+        "answer": "In the sink in the kitchen",
+        "answer_id": "B"
+    },
+    "e59e9409-776f-4c14-945e-11772fd5ff50": {
+        "question": "Where should I store fruits that I want to last long?",
+        "choices": [
+            "On the kitchen counter.",
+            "In the fridge",
+            "In a sealed bag.",
+            "In a fruit bowl."
+        ],
+        "answer": "In the fridge",
+        "answer_id": "B"
+    },
+    "8ddd3d37-86fb-41cf-9948-d0b639706a93": {
+        "question": "Is this home in the suburbs?",
+        "choices": [
+            "Yes.",
+            "It's in the city center.",
+            "No.",
+            "It's a rural property."
+        ],
+        "answer": "No.",
+        "answer_id": "C"
+    },
+    "81739eb9-ef32-42e3-b1cf-fa8e826813ef": {
+        "question": "Where is the breakfast table?",
+        "choices": [
+            "Near the patio doors.",
+            "Beside the living room.",
+            "To the left of the kitchen",
+            "In the dining area."
+        ],
+        "answer": "To the left of the kitchen",
+        "answer_id": "C"
+    },
+    "d9737f88-11c2-454d-aa40-a2e1f3111505": {
+        "question": "Where are the light switches?",
+        "choices": [
+            "To the right of the front door",
+            "Under the kitchen cabinet.",
+            "Behind the living room curtain.",
+            "Next to the bedroom mirror."
+        ],
+        "answer": "To the right of the front door",
+        "answer_id": "A"
+    },
+    "cbb81160-b858-49d6-a234-a94edb4d0b1d": {
+        "question": "What is the large white brick fixture?",
+        "choices": [
+            "A fireplace",
+            "A chimney.",
+            "An oven.",
+            "A bookshelf."
+        ],
+        "answer": "A fireplace",
+        "answer_id": "A"
+    },
+    "554929c8-cd5a-4b19-ab0c-1dba2b5126cb": {
+        "question": "What color is the comforter?",
+        "choices": [
+            "Blue.",
+            "Pink",
+            "Green.",
+            "Yellow."
+        ],
+        "answer": "Pink",
+        "answer_id": "B"
+    },
+    "660372d6-b02b-406e-9383-28e27a4da9ab": {
+        "question": "Does the bedroom have any clutter on the floor?",
+        "choices": [
+            "No",
+            "Yes, everywhere",
+            "Only near the closet",
+            "Just a few items"
+        ],
+        "answer": "No",
+        "answer_id": "A"
+    },
+    "38ce32f5-3c19-46c3-94e6-79efa00a6fbe": {
+        "question": "Is the front door open?",
+        "choices": [
+            "Yes.",
+            "Not sure.",
+            "No",
+            "I think so."
+        ],
+        "answer": "No",
+        "answer_id": "C"
+    },
+    "7c8e453b-67ac-424a-a73e-7f9a0d6d8cc5": {
+        "question": "Is the window in the bedroom open?",
+        "choices": [
+            "No.",
+            "I think so.",
+            "Yes",
+            "Not sure."
+        ],
+        "answer": "Yes",
+        "answer_id": "C"
+    },
+    "ecf1c2a2-f480-45f2-866c-8b73dff5347f": {
+        "question": "Where can I take notes?",
+        "choices": [
+            "In a notebook during a conference.",
+            "On the whiteboard at the office.",
+            "On the desk in the bedroom",
+            "On a sticky note in the kitchen."
+        ],
+        "answer": "On the desk in the bedroom",
+        "answer_id": "C"
+    },
+    "0e49111c-608d-4d02-aacb-3705bdd0ca5e": {
+        "question": "Where can I brush my teeth?",
+        "choices": [
+            "In the kitchen sink.",
+            "In the bathroom sink",
+            "In the garden hose.",
+            "In the pool."
+        ],
+        "answer": "In the bathroom sink",
+        "answer_id": "B"
+    },
+    "87e01245-6f75-4ac3-9844-7f331d7df193": {
+        "question": "What type of door design is featured prominently in this home?",
+        "choices": [
+            "Barn-style sliding door",
+            "French double door",
+            "Cross hatch glass door",
+            "Frosted panel door"
+        ],
+        "answer": "Cross hatch glass door",
+        "answer_id": "C"
+    },
+    "41f53d99-4277-4dec-892e-8e52a2cc7402": {
+        "question": "Where can I set if I want to warmup?",
+        "choices": [
+            "Near the radiator.",
+            "Under a cozy blanket.",
+            "Next to a steaming cup of tea.",
+            "By the fireplace"
+        ],
+        "answer": "By the fireplace",
+        "answer_id": "D"
+    },
+    "143ade55-0216-455d-8e2f-6aa249596986": {
+        "question": "Where is the doll",
+        "choices": [
+            "Inside the toy chest.",
+            "Underneath the living room sofa.",
+            "On top of the light brown wooden cabinet",
+            "Beside the old bookcase."
+        ],
+        "answer": "On top of the light brown wooden cabinet",
+        "answer_id": "C"
+    },
+    "baa59d32-91d7-48e1-aa38-4c34bdb7296b": {
+        "question": "Where can I check my appearance?",
+        "choices": [
+            "In the mirror which is above the white drawer in the bedroom",
+            "In the bathroom mirror.",
+            "In the reflection of a window.",
+            "In my phone camera."
+        ],
+        "answer": "In the mirror which is above the white drawer in the bedroom",
+        "answer_id": "A"
+    },
+    "0aed0f3a-57ce-47ae-92ac-e76db6ba5a26": {
+        "question": "What are the objects on the bench around the dining table?",
+        "choices": [
+            "Books.",
+            "Pillows",
+            "Candles.",
+            "Vases."
+        ],
+        "answer": "Pillows",
+        "answer_id": "B"
+    },
+    "28694964-f409-42ee-b3a1-22b17c7f3408": {
+        "question": "What color is the jacket on the clothes hangar?",
+        "choices": [
+            "Blue",
+            "Yellow",
+            "Maroon or red",
+            "Brown"
+        ],
+        "answer": "Maroon or red",
+        "answer_id": "C"
+    },
+    "037d2811-3b0b-4ab8-8c91-19a5cded9eac": {
+        "question": "What is on the dining table?",
+        "choices": [
+            "Place mats.",
+            "Wine glasses",
+            "Candles.",
+            "Napkin rings."
+        ],
+        "answer": "Wine glasses",
+        "answer_id": "B"
+    },
+    "b9fa3fcf-34f1-4eb5-a6d1-3fb4465ade39": {
+        "question": "What is to the left of the dining table?",
+        "choices": [
+            "A window.",
+            "A plant.",
+            "A wine cabinet",
+            "A vase."
+        ],
+        "answer": "A wine cabinet",
+        "answer_id": "C"
+    },
+    "853d340b-c69d-4371-894c-5e1151844b14": {
+        "question": "Is the cloth hanger rack full?",
+        "choices": [
+            "Yes.",
+            "Almost.",
+            "Not sure.",
+            "No."
+        ],
+        "answer": "No.",
+        "answer_id": "D"
+    },
+    "70cfab22-1dc1-4b9a-a751-8014c1900ee3": {
+        "question": "Is there any natural light in this building?",
+        "choices": [
+            "A: Yes, but only in the lobby.",
+            "B: Only during the daytime.",
+            "C: Yes, in some rooms.",
+            "No."
+        ],
+        "answer": "No.",
+        "answer_id": "D"
+    },
+    "f26d0764-cfaa-4d85-8adf-8be0a3c1864d": {
+        "question": "Where can I put my jacket?",
+        "choices": [
+            "In the wardrobe.",
+            "On the cloth hanger rack",
+            "On the back of a chair.",
+            "Inside your backpack."
+        ],
+        "answer": "On the cloth hanger rack",
+        "answer_id": "B"
+    },
+    "3c563c2d-01a4-4bec-b594-26c90e2f2b1f": {
+        "question": "Where can I wipe my shoes?",
+        "choices": [
+            "On the welcome carpet.",
+            "On the granite tiles.",
+            "On the polished wooden floor.",
+            "On the black floor mat"
+        ],
+        "answer": "On the black floor mat",
+        "answer_id": "D"
+    },
+    "490a726f-7323-46cd-96ca-9405d881d08a": {
+        "question": "What kind of staircase is in this building?",
+        "choices": [
+            "A floating staircase.",
+            "An L-shaped staircase.",
+            "A straight staircase.",
+            "A spiral staircase"
+        ],
+        "answer": "A spiral staircase",
+        "answer_id": "D"
+    },
+    "5cc891f2-c7fd-478a-bbc0-03a4b7c66472": {
+        "question": "What kind of material is the wall on the right side of the staircase?",
+        "choices": [
+            "Painted wood.",
+            "Exposed stone",
+            "Smooth metal.",
+            "Textured wallpaper."
+        ],
+        "answer": "Exposed stone",
+        "answer_id": "B"
+    },
+    "48df3807-7f19-4bd6-aa77-9ba8f66483fd": {
+        "question": "Where are the clothes?",
+        "choices": [
+            "On the hangars next to the stairway",
+            "In the dresser near the bed.",
+            "Inside the closet by the window.",
+            "On the shelves in the hallway."
+        ],
+        "answer": "On the hangars next to the stairway",
+        "answer_id": "A"
+    },
+    "4a0b1006-0209-4e6a-a0fa-dab6835b6605": {
+        "question": "What color pattern is on the pillow on the black couch?",
+        "choices": [
+            "Choice1",
+            "A leopard skin color pattern",
+            "A zebra stripe pattern.",
+            "A polka dot pattern."
+        ],
+        "answer": "A leopard skin color pattern",
+        "answer_id": "B"
+    },
+    "8857cab2-2407-4e9f-a8fe-f4eb182a2b39": {
+        "question": "What is leaning in the corner by the coat rack?",
+        "choices": [
+            "A briefcase",
+            "A broom",
+            "An umbrella",
+            "A walking stick"
+        ],
+        "answer": "An umbrella",
+        "answer_id": "C"
+    },
+    "e81b4b48-2a76-455d-9c29-188c9bc38b66": {
+        "question": "What is draped on top of the black couch?",
+        "choices": [
+            "A striped blue blanket",
+            "A polka dot cushion.",
+            "A floral quilt.",
+            "A knitted beige throw."
+        ],
+        "answer": "A striped blue blanket",
+        "answer_id": "A"
+    },
+    "8985bd89-1b04-4328-869e-75c416eab90b": {
+        "question": "Are the curtains to the patio door open?",
+        "choices": [
+            "No.",
+            "Yes",
+            "Partially.",
+            "Occasionally."
+        ],
+        "answer": "Yes",
+        "answer_id": "B"
+    },
+    "e2970c04-f26d-48a0-bd68-3f9eb5c2a086": {
+        "question": "Is the blue lamp by the couch turned on?",
+        "choices": [
+            "Yes.",
+            "No",
+            "Sometimes.",
+            "Can't tell."
+        ],
+        "answer": "No",
+        "answer_id": "B"
+    },
+    "3a4ad822-79dd-460d-ac73-1c3acbf8dd11": {
+        "question": "Where can I put my hat?",
+        "choices": [
+            "On the coatrack.",
+            "In the closet.",
+            "On the table.",
+            "On the hat rack"
+        ],
+        "answer": "On the hat rack",
+        "answer_id": "D"
+    },
+    "c1609580-2208-4c0d-837e-1f6fb628ad52": {
+        "question": "Where can I take a nap?",
+        "choices": [
+            "On the black couch",
+            "In the cozy armchair.",
+            "On the hammock in the backyard.",
+            "In the guest bedroom."
+        ],
+        "answer": "On the black couch",
+        "answer_id": "A"
+    },
+    "0b48b97e-4a15-4181-bff3-8852f09f2f3e": {
+        "question": "Is this home in the city?",
+        "choices": [
+            "Yes.",
+            "Maybe.",
+            "No.",
+            "Not sure."
+        ],
+        "answer": "No.",
+        "answer_id": "C"
+    },
+    "07c4017d-db5a-447a-8086-17d9472e7100": {
+        "question": "Where is the bongo?",
+        "choices": [
+            "In the green cabinet.",
+            "On top of the brown shelf",
+            "Under the black desk.",
+            "Next to the red chair."
+        ],
+        "answer": "On top of the brown shelf",
+        "answer_id": "B"
+    },
+    "708d0223-b80a-4727-baa7-756d61b2a551": {
+        "question": "Where is the black and grey speaker?",
+        "choices": [
+            "Under the desk next to the lamp.",
+            "Beside the television set in the corner.",
+            "On the first shelf of the wooden cabinet",
+            "On the second shelf of the metal rack."
+        ],
+        "answer": "On the first shelf of the wooden cabinet",
+        "answer_id": "C"
+    },
+    "31561566-4e70-40c7-9c5b-583ddc2d39cf": {
+        "question": "What is the blue object above the glass doors?",
+        "choices": [
+            "A clock",
+            "An emergency exit sign.",
+            "A security camera.",
+            "A ventilation grill."
+        ],
+        "answer": "A clock",
+        "answer_id": "A"
+    },
+    "4decde3d-5ab8-43db-893c-c3f3f80bcc76": {
+        "question": "What is the yellow object hanging on the wall?",
+        "choices": [
+            "An abstract sunrise canvas.",
+            "A painting depicting a man",
+            "A single daffodil in a frame.",
+            "A golden mirror."
+        ],
+        "answer": "A painting depicting a man",
+        "answer_id": "B"
+    },
+    "6bff2ba3-5b68-4d77-a302-1640cc06dd15": {
+        "question": "What color are the kitchen cabinets?",
+        "choices": [
+            "Grey",
+            "White.",
+            "Wooden.",
+            "Blue."
+        ],
+        "answer": "Grey",
+        "answer_id": "A"
+    },
+    "36ad6cce-7cd1-429e-b75a-581dc6849603": {
+        "question": "What color is the trim around the mirror?",
+        "choices": [
+            "Gold",
+            "Silver.",
+            "Black.",
+            "Red."
+        ],
+        "answer": "Gold",
+        "answer_id": "A"
+    },
+    "99afbf6e-0b35-4228-8676-dca7c7709a23": {
+        "question": "How many basins does the sink have?",
+        "choices": [
+            "Choice1: One.",
+            "Choice2: Three.",
+            "Two",
+            "Choice3: No basins."
+        ],
+        "answer": "Two",
+        "answer_id": "C"
+    },
+    "6a6a7283-bccc-4923-a843-e0225ad21e3c": {
+        "question": "Is there room for more furniture near the kitchen?",
+        "choices": [
+            "No.",
+            "Maybe.",
+            "Yes",
+            "Only for small pieces."
+        ],
+        "answer": "Yes",
+        "answer_id": "C"
+    },
+    "2449be8f-1320-4061-beb0-2797f5766c73": {
+        "question": "Are the kitchen bar chairs tucked in?",
+        "choices": [
+            "No.",
+            "Partially.",
+            "Not sure.",
+            "Yes."
+        ],
+        "answer": "Yes.",
+        "answer_id": "D"
+    },
+    "b1146a3a-444b-4c57-9975-d4367b7ae0d6": {
+        "question": "Is the backyard fenced?",
+        "choices": [
+            "No.",
+            "Partially.",
+            "Yes",
+            "Unknown."
+        ],
+        "answer": "Yes",
+        "answer_id": "C"
+    },
+    "2c49d6d3-3b48-4680-a32e-2bb32a5af687": {
+        "question": "Where can I put my apples?",
+        "choices": [
+            "Use the basket on the kitchen counter",
+            "Place them in the fruit bowl on the dining table.",
+            "Store them in the refrigerator's crisper drawer.",
+            "Arrange them on the window sill for ripening."
+        ],
+        "answer": "Use the basket on the kitchen counter",
+        "answer_id": "A"
+    },
+    "8471794d-32cd-4989-8cec-91118eb43b67": {
+        "question": "What can I use to check my appearance?",
+        "choices": [
+            "The mirror above the wooden table near the kitchen.",
+            "The compact mirror in your handbag.",
+            "The reflective window in the living room.",
+            "A polished silver spoon from the drawer."
+        ],
+        "answer": "The mirror above the wooden table near the kitchen.",
+        "answer_id": "A"
+    },
+    "3ba5ff66-1622-4f4e-bc76-8371b1e0e17d": {
+        "question": "What kind of numbering does the blue clock use?",
+        "choices": [
+            "Roman numerals",
+            "Arabic numerals.",
+            "Binary code.",
+            "Morse code."
+        ],
+        "answer": "Roman numerals",
+        "answer_id": "A"
+    },
+    "d5b18be3-2d0c-4653-9706-7c33159de7a9": {
+        "question": "What is the picture seen from the kitchen depict?",
+        "choices": [
+            "A group of people enjoying a picnic under the sun.",
+            "A man and a child, looking at something, standing in between trees",
+            "A dog chasing after a ball near a small pond.",
+            "A distant mountain range shrouded in clouds."
+        ],
+        "answer": "A man and a child, looking at something, standing in between trees",
+        "answer_id": "B"
+    },
+    "0f56a54b-eac3-4b98-b118-ddcbac7735e7": {
+        "question": "Where is the microwave?",
+        "choices": [
+            "Inside the pantry.",
+            "Above the oven",
+            "Next to the fridge.",
+            "Under the countertop."
+        ],
+        "answer": "Above the oven",
+        "answer_id": "B"
+    },
+    "bfe3dd93-acd5-42ab-a492-f5914c1a3b26": {
+        "question": "Where is the red and white checkered rug?",
+        "choices": [
+            "Folded in the linen closet.",
+            "By the fireplace in the living room.",
+            "In the laundry basket near the washer.",
+            "Underneath the wooden dining table"
+        ],
+        "answer": "Underneath the wooden dining table",
+        "answer_id": "D"
+    },
+    "79a66a14-c79c-48fa-b6e6-6c442765ba22": {
+        "question": "What is above the coffee table?",
+        "choices": [
+            "A ceiling fan.",
+            "A skylight.",
+            "A chandelier",
+            "A painting."
+        ],
+        "answer": "A chandelier",
+        "answer_id": "C"
+    },
+    "f454e7a5-b49b-43be-83d9-7b204ce6314a": {
+        "question": "What is at the back of the living room, behind the couches?",
+        "choices": [
+            "A bookshelf.",
+            "A large mirror.",
+            "A piano",
+            "A window with curtains."
+        ],
+        "answer": "A piano",
+        "answer_id": "C"
+    },
+    "26bd014e-529f-4deb-bcfd-261f35ac7ff2": {
+        "question": "What color are the air vents below the window?",
+        "choices": [
+            "Silver.",
+            "White.",
+            "Gold",
+            "Black."
+        ],
+        "answer": "Gold",
+        "answer_id": "C"
+    },
+    "8bb765de-228d-47c2-89e3-e57dbd07261c": {
+        "question": "What is in between the two couches?",
+        "choices": [
+            "A lamp.",
+            "A coffee table",
+            "A bookcase.",
+            "A floor rug."
+        ],
+        "answer": "A coffee table",
+        "answer_id": "B"
+    },
+    "e2a55cb0-a883-4dd6-9b2f-239d92ebd8bc": {
+        "question": "What is above the piano?",
+        "choices": [
+            "A mirror.",
+            "A painting",
+            "A clock.",
+            "A shelf."
+        ],
+        "answer": "A painting",
+        "answer_id": "B"
+    },
+    "3e900181-4cf3-41f9-bdb8-0e3e6f1b53e3": {
+        "question": "Is there natural light in the room?",
+        "choices": [
+            "Yes, there's a window.",
+            "Only in the mornings.",
+            "No.",
+            "Only artificial light."
+        ],
+        "answer": "No.",
+        "answer_id": "C"
+    },
+    "fd4dad2f-19fc-4a3f-87ac-d210657d1add": {
+        "question": "Is the piano keyboard cover open or closed?",
+        "choices": [
+            "Open",
+            "Closed.",
+            "Partially open.",
+            "Not specified."
+        ],
+        "answer": "Open",
+        "answer_id": "A"
+    },
+    "566776fa-aab8-4084-b40b-57f69167c97c": {
+        "question": "What can I use to entertain my guests with music?",
+        "choices": [
+            "Guitar",
+            "Violin",
+            "The piano",
+            "Bluetooth speaker"
+        ],
+        "answer": "The piano",
+        "answer_id": "C"
+    },
+    "f48a99c3-ec77-450b-97d9-5b48bc662cb6": {
+        "question": "Where can I lay down and read a book?",
+        "choices": [
+            "The park bench.",
+            "The couch",
+            "A hammock.",
+            "The library chair."
+        ],
+        "answer": "The couch",
+        "answer_id": "B"
+    },
+    "8b7d2afd-2a77-4f2b-afe1-b1751d890db4": {
+        "question": "Can this home be used for a large dinner party?",
+        "choices": [
+            "No, it's too small.",
+            "Possibly, with some modifications.",
+            "Not without additional furniture.",
+            "Yes."
+        ],
+        "answer": "Yes.",
+        "answer_id": "D"
+    },
+    "2f73aba9-c2c7-4f97-b3e4-2435960763b9": {
+        "question": "Is the person who lives here an avid reader?",
+        "choices": [
+            "No.",
+            "Maybe.",
+            "Yes.",
+            "Unknown."
+        ],
+        "answer": "Yes.",
+        "answer_id": "C"
+    },
+    "83356063-ea59-4894-a077-5c2a6fb1042e": {
+        "question": "Where is the pillow with the face on it?",
+        "choices": [
+            "On the couch",
+            "In the bedroom.",
+            "Under the table.",
+            "In the laundry basket."
+        ],
+        "answer": "On the couch",
+        "answer_id": "A"
+    },
+    "65ec009e-d173-4e49-9168-f48fd20308f1": {
+        "question": "Where is the microwave?",
+        "choices": [
+            "Inside the cupboard.",
+            "Next to the coffee maker.",
+            "On top of the refrigerator",
+            "Above the stove."
+        ],
+        "answer": "On top of the refrigerator",
+        "answer_id": "C"
+    },
+    "46a04f3a-56a5-4547-9cd9-c683919c0eb1": {
+        "question": "Where is the pillow with a hexagonal pattern?",
+        "choices": [
+            "In the living room on the sofa.",
+            "On the bed in the second bedroom.",
+            "On the armchair in the study.",
+            "In the guest room on the window seat."
+        ],
+        "answer": "On the bed in the second bedroom.",
+        "answer_id": "B"
+    },
+    "cf5eb398-f811-4345-9f0f-77c72bdcfbf9": {
+        "question": "Where can I hang my towel so I don't have to leave the shower to dry off?",
+        "choices": [
+            "On the glass wall of the shower.",
+            "On a heated towel rack near the shower.",
+            "On a hook inside the shower.",
+            "Over a shower rod curtain."
+        ],
+        "answer": "On the glass wall of the shower.",
+        "answer_id": "A"
+    },
+    "2d0b6748-bc9d-405a-ad38-6d6711162211": {
+        "question": "What can I use to clean up a spill on the bathroom counter?",
+        "choices": [
+            "Paper towel.",
+            "Toilet paper.",
+            "Sponge.",
+            "The hand towel"
+        ],
+        "answer": "The hand towel",
+        "answer_id": "D"
+    },
+    "9d8ffc3b-4f98-4bc2-8fd3-ce696223c7c9": {
+        "question": "What cartoon character is portrayed in the painting to the right of the television in the first bedroom?",
+        "choices": [
+            "Mickey Mouse",
+            "Goofy",
+            "Daffy Duck",
+            "Donald Duck"
+        ],
+        "answer": "Donald Duck",
+        "answer_id": "D"
+    },
+    "ab1701f5-085c-48e4-aaba-06c23409d3e2": {
+        "question": "What is the painting to the right of the television in the first bedroom made out of?",
+        "choices": [
+            "Old movie posters.",
+            "Dollar bills",
+            "Magazine clippings.",
+            "Fabric patches."
+        ],
+        "answer": "Dollar bills",
+        "answer_id": "B"
+    },
+    "72529064-198f-4cbc-800d-2e5a2476d5c3": {
+        "question": "Where does the dog sleep at night?",
+        "choices": [
+            "On the couch in the living room.",
+            "In the crate under the staircase.",
+            "On the master bedroom floor.",
+            "In its bed by the back door."
+        ],
+        "answer": "In the crate under the staircase.",
+        "answer_id": "B"
+    },
+    "d0165de2-29aa-44d1-8689-ff13cd573c79": {
+        "question": "Where is the toy car?",
+        "choices": [
+            "To the left of the television in the first bedroom.",
+            "To the right of the bookshelf in the living room.",
+            "Under the dining table in the kitchen.",
+            "Next to the lamp on the bedside table."
+        ],
+        "answer": "To the left of the television in the first bedroom.",
+        "answer_id": "A"
+    },
+    "26e6b5bf-e328-4e10-89e2-f1cea4949647": {
+        "question": "Where is the abstract painting with blue circles?",
+        "choices": [
+            "In the gallery.",
+            "In the hallway.",
+            "In the study.",
+            "In the dining room"
+        ],
+        "answer": "In the dining room",
+        "answer_id": "D"
+    },
+    "9a17b771-9efb-485a-9497-d5b7698b5702": {
+        "question": "Where are the pillows?",
+        "choices": [
+            "On the sofa in the bedroom.",
+            "In the living room. ",
+            "Under the bed. ",
+            "Next to the window. "
+        ],
+        "answer": "On the sofa in the bedroom.",
+        "answer_id": "A"
+    },
+    "ca7b3e07-1300-4c31-befe-d3e39c70e77a": {
+        "question": "what can be seen in the mirror on top of staircase?",
+        "choices": [
+            "a tripod",
+            "a picture frame.",
+            "a standing lamp.",
+            "a decorative vase."
+        ],
+        "answer": "a tripod",
+        "answer_id": "A"
+    },
+    "98f5190a-b4b0-4bcb-83d0-43dfc39dba85": {
+        "question": "what is behind the monitor screen?",
+        "choices": [
+            "wall",
+            "wires",
+            "another room",
+            "window"
+        ],
+        "answer": "window",
+        "answer_id": "D"
+    },
+    "860923a7-097b-4df5-8a62-59975c3d2a83": {
+        "question": "what color is the tripod?",
+        "choices": [
+            "gray.",
+            "black",
+            "silver.",
+            "blue."
+        ],
+        "answer": "black",
+        "answer_id": "B"
+    },
+    "f7b686fc-aa6c-4c41-b4b7-a355f558c640": {
+        "question": "is the brown dresser in the bedroom empty?",
+        "choices": [
+            "no",
+            "Yes, it is empty.",
+            "It's partially filled.",
+            "Cannot be determined from the given information."
+        ],
+        "answer": "no",
+        "answer_id": "A"
+    },
+    "38fe23f1-ea75-4a67-9528-a573e3407e1c": {
+        "question": "is the lamp in the bedroom on or off?",
+        "choices": [
+            "off.",
+            "dimmed.",
+            "on",
+            "unplugged."
+        ],
+        "answer": "on",
+        "answer_id": "C"
+    },
+    "7473836e-84ba-4d9c-a86e-4da760d670f4": {
+        "question": "are the blinds in the workroom shut or not?",
+        "choices": [
+            "partially shut.",
+            "fully open.",
+            "not shut",
+            "completely shut."
+        ],
+        "answer": "not shut",
+        "answer_id": "C"
+    },
+    "0dd3f6f0-fe45-4bf4-ab4b-b750d05eda07": {
+        "question": "where can I keep the keyboard",
+        "choices": [
+            "on top of a shelf.",
+            "under the desk.",
+            "in a drawer.",
+            "on the table in the workroom"
+        ],
+        "answer": "on the table in the workroom",
+        "answer_id": "D"
+    },
+    "f3ea4884-2d8f-40fa-b4cb-89d08bd4a7e8": {
+        "question": "where can I keep a flower vase in the bedroom?",
+        "choices": [
+            "on the dresser.",
+            "by the window sill.",
+            "on a wall shelf.",
+            "on the bedside board"
+        ],
+        "answer": "on the bedside board",
+        "answer_id": "D"
+    },
+    "4dbede08-5637-46a4-a5b9-89e227b43204": {
+        "question": "what is the object seen in the mirror used for?",
+        "choices": [
+            "Distract birds",
+            "Escape reality",
+            "to take photos and videos",
+            "Find hidden treasure"
+        ],
+        "answer": "to take photos and videos",
+        "answer_id": "C"
+    },
+    "7f45dce6-51ca-4703-b328-998bb9a7e131": {
+        "question": "what does the outside weather look like?",
+        "choices": [
+            "bright and sunny ",
+            "overcast and gloomy",
+            "rainy and wet",
+            "windy and cold"
+        ],
+        "answer": "bright and sunny ",
+        "answer_id": "A"
+    },
+    "365b5e6a-8ef5-4434-b55c-6d5dc09d28f0": {
+        "question": "what room is the white table lamp in?",
+        "choices": [
+            "kitchen.",
+            "living room.",
+            "bedroom",
+            "study."
+        ],
+        "answer": "bedroom",
+        "answer_id": "C"
+    },
+    "1529242c-eff2-40a9-bf02-016f3291aa88": {
+        "question": "where is the black chair?",
+        "choices": [
+            "beside the bookshelf in the library.",
+            "infront of the monitor in the work room",
+            "next to the bed in the bedroom.",
+            "opposite the window in the living room."
+        ],
+        "answer": "infront of the monitor in the work room",
+        "answer_id": "B"
+    },
+    "226ab7fe-8b53-4842-b313-1e7644771cb2": {
+        "question": "what is infront of the blackboard on the wall?",
+        "choices": [
+            "a small kids table and chair set",
+            "A bulletin board with sticky notes.",
+            "A clock showing the current time.",
+            "A bookshelf filled with picture books."
+        ],
+        "answer": "a small kids table and chair set",
+        "answer_id": "A"
+    },
+    "c7c8c496-b3d2-4370-b321-d4274ffda701": {
+        "question": "what is between the lamp and the side table in the bedroom?",
+        "choices": [
+            "decorative vase",
+            "picture frame",
+            "alarm clock",
+            "electric switch"
+        ],
+        "answer": "electric switch",
+        "answer_id": "D"
+    },
+    "ddd3c7bd-6a44-4bdf-a6c5-c0f8d7850627": {
+        "question": "what shapes are drawn on the  black board",
+        "choices": [
+            "triangle and circle.",
+            "star and moon",
+            "square and hexagon.",
+            "diamond and heart."
+        ],
+        "answer": "star and moon",
+        "answer_id": "B"
+    },
+    "44a23f96-b643-4e1b-94ad-48687d0f38b7": {
+        "question": "what shape are the decorations above the bed?",
+        "choices": [
+            "circle.",
+            "square.",
+            "triangle",
+            "star."
+        ],
+        "answer": "triangle",
+        "answer_id": "C"
+    },
+    "04c770eb-c1a7-44c4-b91f-8aa24e2dbed9": {
+        "question": "are the lamps in the second room on or off?",
+        "choices": [
+            "off",
+            "flickering",
+            "on",
+            "dimmed"
+        ],
+        "answer": "on",
+        "answer_id": "C"
+    },
+    "08b7d126-dbd4-48dd-9432-e1edb91ac425": {
+        "question": "is the bed in the second room completely empty?",
+        "choices": [
+            "yes.",
+            "partially empty.",
+            "only linens are present.",
+            "no"
+        ],
+        "answer": "no",
+        "answer_id": "D"
+    },
+    "3687c774-b8bf-4416-a77f-90fcec5b4302": {
+        "question": "where can I keep a small container with chalks?",
+        "choices": [
+            "in the teacher's desk drawer.",
+            "on the windowsill next to the plants.",
+            "inside the student's supply cabinet.",
+            "on the table infront of the blackboard"
+        ],
+        "answer": "on the table infront of the blackboard",
+        "answer_id": "D"
+    },
+    "0ef0ebd1-db05-4f87-adc7-d01a640c1eed": {
+        "question": "where is the star drawn?",
+        "choices": [
+            "on the blackboard",
+            "on the notebook.",
+            "on the ceiling.",
+            "on the flag."
+        ],
+        "answer": "on the blackboard",
+        "answer_id": "A"
+    },
+    "a1253597-ec48-4281-a978-520c2f2d721b": {
+        "question": "where is the brown basket?",
+        "choices": [
+            "next to the small table-chair set infront of the black board",
+            "under the kitchen counter.",
+            "on the top shelf beside the microwave.",
+            "hanging on the wall by the window."
+        ],
+        "answer": "next to the small table-chair set infront of the black board",
+        "answer_id": "A"
+    },
+    "491bba39-1097-4315-955f-42175742180a": {
+        "question": "what is the red object next to the mirror?",
+        "choices": [
+            "- Vase",
+            "lamp",
+            "- Clock",
+            "- Book"
+        ],
+        "answer": "lamp",
+        "answer_id": "B"
+    },
+    "96d03658-7a65-4bb4-aff5-01c9a7108ee6": {
+        "question": "what is the object hanging below the picture frame in the kitchen?",
+        "choices": [
+            "spatula",
+            "Choice1",
+            "Choice2",
+            "Choice3"
+        ],
+        "answer": "spatula",
+        "answer_id": "A"
+    },
+    "3023e719-7e23-412f-bcc1-cca426b7a5df": {
+        "question": "what color are the mittens?",
+        "choices": [
+            "blue",
+            "grey",
+            "red",
+            "green"
+        ],
+        "answer": "grey",
+        "answer_id": "B"
+    },
+    "de97a986-30c3-4e0b-92dc-77ba1900cf8d": {
+        "question": "where precisely are the markers in the study room?",
+        "choices": [
+            "on the teacher's desk.",
+            "in the drawer beside the window.",
+            "on top of the bookshelf.",
+            "on the whiteboard bottom-right corner"
+        ],
+        "answer": "on the whiteboard bottom-right corner",
+        "answer_id": "D"
+    },
+    "471c0bc9-f594-42d9-90c7-075c14b2ede8": {
+        "question": "what is above the markers on the whiteboard?",
+        "choices": [
+            "eraser",
+            "Choice1: clock",
+            "Choice2: projector",
+            "Choice3: shelf"
+        ],
+        "answer": "eraser",
+        "answer_id": "A"
+    },
+    "cbf4d400-c7e9-488b-9c20-b74ac175e15b": {
+        "question": "is the door to the washroom open or closed?",
+        "choices": [
+            "Closed.",
+            "Slightly ajar.",
+            "open",
+            "Half-open."
+        ],
+        "answer": "open",
+        "answer_id": "C"
+    },
+    "31357e26-ac28-45fc-b142-201f14cc183d": {
+        "question": "is there anything on the bed besides pillows?",
+        "choices": [
+            "A) A blanket.",
+            "B) A cat.",
+            "no",
+            "C) Books."
+        ],
+        "answer": "no",
+        "answer_id": "C"
+    },
+    "acebe630-9d99-4897-bd0f-028038e5baaa": {
+        "question": "how can I clean the whiteboard?",
+        "choices": [
+            "using the eraser attached to the whiteboard",
+            "Choice1: Wipe it with a damp cloth.",
+            "Choice2: Spray a whiteboard cleaner and wipe with a cloth.",
+            "Choice3: Use a paper towel to remove marks."
+        ],
+        "answer": "using the eraser attached to the whiteboard",
+        "answer_id": "A"
+    },
+    "8a914303-067c-44ba-b8a3-2fd72d3f4396": {
+        "question": "what room is the surface cleaner in?",
+        "choices": [
+            "the storage closet.",
+            "the janitor's office.",
+            "the kitchen.",
+            "the room with the whiteboard"
+        ],
+        "answer": "the room with the whiteboard",
+        "answer_id": "D"
+    },
+    "0b567fd4-e3f1-438f-8365-e4720916c118": {
+        "question": "where is the word friendship written?",
+        "choices": [
+            "above the door in the living room",
+            "on the kitchen wall.",
+            "underneath the coffee table.",
+            "next to the refrigerator."
+        ],
+        "answer": "above the door in the living room",
+        "answer_id": "A"
+    },
+    "babe466a-4ee8-4afd-a8f9-964793a5d425": {
+        "question": "where is the fan?",
+        "choices": [
+            "in the living room next to the lamp.",
+            "in the dining room besides the kitchen",
+            "in the bedroom in the corner.",
+            "in the study by the bookshelf."
+        ],
+        "answer": "in the dining room besides the kitchen",
+        "answer_id": "B"
+    },
+    "bcd201bc-ed53-4db6-870c-63b06b948b0d": {
+        "question": "what is the the grey object below the TV",
+        "choices": [
+            "a box",
+            "a basket.",
+            "a rug.",
+            "a shelf."
+        ],
+        "answer": "a box",
+        "answer_id": "A"
+    },
+    "225c132a-1ec6-47b3-8f5e-887b91168b93": {
+        "question": "what is the object to the right of the TV",
+        "choices": [
+            "a vase",
+            "a lamp",
+            "a plant",
+            "a clock"
+        ],
+        "answer": "a clock",
+        "answer_id": "D"
+    },
+    "634b11ff-ff13-4b50-8a12-61d1fd9ca2f7": {
+        "question": "what color is the sofa",
+        "choices": [
+            "blue",
+            "green",
+            "red",
+            "yellow"
+        ],
+        "answer": "blue",
+        "answer_id": "A"
+    },
+    "ce8acdaa-800e-4c8a-a3a2-42297c2b9526": {
+        "question": "what color are the bed covers",
+        "choices": [
+            "red.",
+            "blue",
+            "green.",
+            "yellow."
+        ],
+        "answer": "blue",
+        "answer_id": "B"
+    },
+    "62627a1e-e41b-480d-9608-48a154b260bc": {
+        "question": "what is above the right bed",
+        "choices": [
+            "A. a picture frame.",
+            "a window",
+            "B. a ceiling fan.",
+            "C. a bookshelf."
+        ],
+        "answer": "a window",
+        "answer_id": "B"
+    },
+    "96b5c4d7-64a4-4d47-8baa-22abd98dd8ae": {
+        "question": "Is the lamp in the living room on or off",
+        "choices": [
+            "off",
+            "dimmed",
+            "broken",
+            "on"
+        ],
+        "answer": "on",
+        "answer_id": "D"
+    },
+    "fbdabf2c-fa19-4cc5-9f6e-2593555d2797": {
+        "question": "is the bed made",
+        "choices": [
+            "no.",
+            "maybe.",
+            "yes",
+            "soon."
+        ],
+        "answer": "yes",
+        "answer_id": "C"
+    },
+    "f2a5ac3b-be8e-4ed3-be0d-cceb9bc8c797": {
+        "question": "How can I cool down the bedroom",
+        "choices": [
+            "open a window for fresh air.",
+            "use blackout curtains to block sunlight.",
+            "place a bowl of ice in front of a fan.",
+            "turn on ceiling fan"
+        ],
+        "answer": "turn on ceiling fan",
+        "answer_id": "D"
+    },
+    "ccef790e-e972-4d90-a7ae-1e1d5c8c5cb7": {
+        "question": "Where can I place a glass of water in the living room",
+        "choices": [
+            "Choice1",
+            "on the drawer next to the sofa",
+            "Choice2",
+            "Choice3"
+        ],
+        "answer": "on the drawer next to the sofa",
+        "answer_id": "B"
+    },
+    "62ee487f-ee36-4126-b427-41d7447da702": {
+        "question": "I can't open the windows, how can I cool down the bedroom",
+        "choices": [
+            "turn on ceiling fan",
+            "use a portable fan.",
+            "turn on the air conditioning.",
+            "use a damp cloth on the skin."
+        ],
+        "answer": "turn on ceiling fan",
+        "answer_id": "A"
+    },
+    "f098b8bd-8c99-432c-8de2-9163e2442e08": {
+        "question": "I don't have a news paper, how can I check the news",
+        "choices": [
+            "search online.",
+            "listen to the radio.",
+            "use the tv",
+            "ask a friend."
+        ],
+        "answer": "use the tv",
+        "answer_id": "C"
+    },
+    "20a94fb9-5683-4809-8d59-af9ad1ef8092": {
+        "question": "what room has a picture of several airplanes ",
+        "choices": [
+            "the living room.",
+            "the bedroom",
+            "the hallway.",
+            "the study room."
+        ],
+        "answer": "the bedroom",
+        "answer_id": "B"
+    },
+    "76974b48-da23-4e90-ac3c-d2c522f05029": {
+        "question": "what room has a plant",
+        "choices": [
+            "the kitchen.",
+            "the living room",
+            "the bedroom.",
+            "the bathroom."
+        ],
+        "answer": "the living room",
+        "answer_id": "B"
+    },
+    "991967d0-f7ba-4b8e-af60-16c7b9ca00a5": {
+        "question": "what is the pink object on the bed",
+        "choices": [
+            "a stuffed toy",
+            "a pillow",
+            "a blanket",
+            "a book"
+        ],
+        "answer": "a pillow",
+        "answer_id": "B"
+    },
+    "95762878-541e-4f5c-b071-abe79a0393f3": {
+        "question": "what is on top of the drawer in the bedroom",
+        "choices": [
+            "a lamp.",
+            "a TV",
+            "a photo frame.",
+            "a book."
+        ],
+        "answer": "a TV",
+        "answer_id": "B"
+    },
+    "57c11c60-479e-4bb6-9c10-c90c58debc10": {
+        "question": "what color is the bed runner",
+        "choices": [
+            "red",
+            "blue",
+            "yellow",
+            "green"
+        ],
+        "answer": "yellow",
+        "answer_id": "C"
+    },
+    "70171ebf-b936-472c-98c3-304797f083a4": {
+        "question": "what color is the drawer in the bedroom",
+        "choices": [
+            "Dark brown.",
+            "light brown",
+            "Beige.",
+            "White."
+        ],
+        "answer": "light brown",
+        "answer_id": "B"
+    },
+    "af709fd8-dca2-4697-9548-07aa9d157d8e": {
+        "question": "is there an area between the beds to place a glass of water",
+        "choices": [
+            "no",
+            "yes",
+            "sometimes",
+            "rarely"
+        ],
+        "answer": "yes",
+        "answer_id": "B"
+    },
+    "297ec2f6-52fe-4dd2-a325-587510d53de7": {
+        "question": "is the door to the balcony open or closed",
+        "choices": [
+            "Locked",
+            "open",
+            "Ajar",
+            "closed"
+        ],
+        "answer": "open",
+        "answer_id": "B"
+    },
+    "04fe685f-7463-4b7d-b50e-d45023298212": {
+        "question": "is the lamp in the bedroom on or off",
+        "choices": [
+            "off.",
+            "flickering.",
+            "on",
+            "unplugged."
+        ],
+        "answer": "on",
+        "answer_id": "C"
+    },
+    "2227a360-4f65-4264-a786-a8490625f380": {
+        "question": "how can I warm up dinner?",
+        "choices": [
+            "in the microwave",
+            "on the stovetop.",
+            "in the oven.",
+            "with a steam basket."
+        ],
+        "answer": "in the microwave",
+        "answer_id": "A"
+    },
+    "4a9fea90-ee47-4be9-a926-670af52f9618": {
+        "question": "how can I increase airflow in the bedroom ",
+        "choices": [
+            "turn on the ceiling fan",
+            "Open a window.",
+            "Use a pedestal fan.",
+            "Install an air purifier."
+        ],
+        "answer": "turn on the ceiling fan",
+        "answer_id": "A"
+    },
+    "342c93cd-36bf-41fb-bd2c-1abec03ec5a8": {
+        "question": "how many devices can be plugged in on the kitchen counter",
+        "choices": [
+            "five",
+            "three",
+            "unlimited",
+            "two"
+        ],
+        "answer": "two",
+        "answer_id": "D"
+    },
+    "a4d9802f-5339-4b61-8c9a-42256441b86d": {
+        "question": "can I clean the floor with a mop?",
+        "choices": [
+            "yes",
+            "no",
+            "only if it's wet",
+            "not advisable"
+        ],
+        "answer": "yes",
+        "answer_id": "A"
+    },
+    "80d2bc54-76b4-452f-881b-5745f6984cbc": {
+        "question": "where is the bench",
+        "choices": [
+            "under the tree.",
+            "near the door.",
+            "next to the pond.",
+            "by the bed"
+        ],
+        "answer": "by the bed",
+        "answer_id": "D"
+    },
+    "d843b020-4415-4efd-95e7-903f96d4eb26": {
+        "question": "where are chairs to sit",
+        "choices": [
+            "by the fireplace.",
+            "on the balcony",
+            "in the dining room.",
+            "in the garden."
+        ],
+        "answer": "on the balcony",
+        "answer_id": "B"
+    },
+    "9b2ba858-fbf0-4137-829a-4edab772f80b": {
+        "question": "Where is the map of the united states?",
+        "choices": [
+            "On the classroom wall.",
+            "In the geography textbook.",
+            "In the atlas.",
+            "Above the black couch"
+        ],
+        "answer": "Above the black couch",
+        "answer_id": "D"
+    },
+    "6e2f5803-5dca-4853-85d5-468e8f27ce89": {
+        "question": "What's to the left of the toilet?",
+        "choices": [
+            "Towel Rack",
+            "Radiator",
+            "Trash Can",
+            "Toilet Paper Holder"
+        ],
+        "answer": "Radiator",
+        "answer_id": "B"
+    },
+    "a697842a-4891-41de-811d-fcfa20d53dfb": {
+        "question": "What's to the right of the toilet?",
+        "choices": [
+            "A towel rack.",
+            "A sink.",
+            "A bathtub",
+            "A shower curtain."
+        ],
+        "answer": "A bathtub",
+        "answer_id": "C"
+    },
+    "aa639733-fd12-43f4-b186-d72316568450": {
+        "question": "When coming down the stairs, you exit near a couch. What's across from the stairs?",
+        "choices": [
+            "The kitchen.",
+            "A painting.",
+            "A bedroom door.",
+            "The bathroom"
+        ],
+        "answer": "The bathroom",
+        "answer_id": "D"
+    },
+    "6767409d-f832-4f59-87d1-2dfc3c66d343": {
+        "question": "Does the bathroom door open into or out of the bathroom",
+        "choices": [
+            "Into.",
+            "Both ways.",
+            "It depends on the design.",
+            "Out"
+        ],
+        "answer": "Out",
+        "answer_id": "D"
+    },
+    "e918454e-fb58-4dc5-8355-654367edc7f7": {
+        "question": "Is the bathroom door open?",
+        "choices": [
+            "Yes.",
+            "Partially",
+            "No.",
+            "Slightly ajar."
+        ],
+        "answer": "Partially",
+        "answer_id": "B"
+    },
+    "36cacb35-c82d-4bb2-9f48-74f87322d0c1": {
+        "question": "Where is the entryway couch",
+        "choices": [
+            "Beside the coat rack near the door.",
+            "In the lobby next to the reception desk.",
+            "Under the stairs by the main entrance",
+            "Opposite the elevator on the ground floor."
+        ],
+        "answer": "Under the stairs by the main entrance",
+        "answer_id": "C"
+    },
+    "58e8434f-13d4-446e-8fc7-f66bf22b21b5": {
+        "question": "Where is the robed statue",
+        "choices": [
+            "By the stairs in the back of the first level",
+            "Near the main entrance doors.",
+            "In front of the library windows.",
+            "Next to the main hall chandelier."
+        ],
+        "answer": "By the stairs in the back of the first level",
+        "answer_id": "A"
+    },
+    "86336d44-7983-450b-9b0b-b61352d00468": {
+        "question": "Where are the stairs to the basement?",
+        "choices": [
+            "Next to the kitchen exit.",
+            "Underneath the main staircase.",
+            "In the corner of the living room.",
+            "In the hallway by the bedrooms"
+        ],
+        "answer": "In the hallway by the bedrooms",
+        "answer_id": "D"
+    },
+    "66648ca6-3619-4e93-98bb-f4606a842144": {
+        "question": "Where is the baby high chair?",
+        "choices": [
+            "In the kitchen near the door.",
+            "Next to the entrance to the TV room",
+            "Beside the dining table.",
+            "Behind the living room sofa."
+        ],
+        "answer": "Next to the entrance to the TV room",
+        "answer_id": "B"
+    },
+    "20e5d3b2-989f-43dc-b5cc-ff0a844234f5": {
+        "question": "Where is the printer?",
+        "choices": [
+            "In the manager's office.",
+            "Under the staircase.",
+            "Beside the coffee machine.",
+            "Next to the sofa"
+        ],
+        "answer": "Next to the sofa",
+        "answer_id": "D"
+    },
+    "0b91264d-88c2-4758-9ea3-4b026dd951d0": {
+        "question": "Is this house safe to live in?",
+        "choices": [
+            "Yes, the house has passed all inspections.",
+            "No, the house is in disrepair",
+            "Maybe, but further evaluation is needed.",
+            "It depends on the opinion of a certified inspector."
+        ],
+        "answer": "No, the house is in disrepair",
+        "answer_id": "B"
+    },
+    "961fa9de-6a12-49e7-8e69-2590b96242af": {
+        "question": "What size mattresses are in the house",
+        "choices": [
+            "Twin",
+            "Full",
+            "Queen",
+            "King"
+        ],
+        "answer": "Full",
+        "answer_id": "B"
+    },
+    "e25996f5-9a95-4b55-a357-a71d65acede3": {
+        "question": "Are the doors open or closed?",
+        "choices": [
+            "Open",
+            "Closed.",
+            "Ajar.",
+            "Locked."
+        ],
+        "answer": "Open",
+        "answer_id": "A"
+    },
+    "ba30c43f-be08-4305-b983-d35c77f1db96": {
+        "question": "How do I turn on the lights?",
+        "choices": [
+            "I press the light switch.",
+            "I use a remote control.",
+            "I do not see any lights in the house",
+            "I clap my hands."
+        ],
+        "answer": "I do not see any lights in the house",
+        "answer_id": "C"
+    },
+    "6d41d08a-2907-4d12-94ec-410b498d5446": {
+        "question": "What can I use to heat up some leftovers?",
+        "choices": [
+            "Gas Stove",
+            "Toaster Oven",
+            "Electric Grill",
+            "This house has no kitchen or microwave with which to reheat leftovers"
+        ],
+        "answer": "This house has no kitchen or microwave with which to reheat leftovers",
+        "answer_id": "D"
+    },
+    "d16c927b-8d75-4743-8018-97320c76b351": {
+        "question": "Where can I use the bathroom?",
+        "choices": [
+            "I'd prefer not to say.",
+            "Ask someone who works here.",
+            "I did not see a bathroom",
+            "Right next to the exit sign."
+        ],
+        "answer": "I did not see a bathroom",
+        "answer_id": "C"
+    },
+    "704170d4-448e-40a0-b485-a4f6785159da": {
+        "question": "What is between the bed and the chair?",
+        "choices": [
+            "A rug.",
+            "A lamp.",
+            "A nightstand",
+            "A bookshelf."
+        ],
+        "answer": "A nightstand",
+        "answer_id": "C"
+    },
+    "a8c02803-de6a-4dd8-97b1-98301dbda075": {
+        "question": "What is on the bed with the blue sheet",
+        "choices": [
+            "A pile of books.",
+            "A fluffy cat.",
+            "Construction insulation",
+            "An abandoned laptop."
+        ],
+        "answer": "Construction insulation",
+        "answer_id": "C"
+    },
+    "99219276-38ce-4730-a793-75108c7bbb9a": {
+        "question": "How many rooms have vehicle wallpaper?",
+        "choices": [
+            "2",
+            "0",
+            "5",
+            "8"
+        ],
+        "answer": "2",
+        "answer_id": "A"
+    }
+}
