@@ -113,19 +113,20 @@ Install Python dependencies:
 
 ```bash
 pip install networkx numpy opencv-python pydantic openai
-'''
+```
 Install cv_bridge:
 
 sudo apt install ros-jazzy-cv-bridge
 
 📥 Installation
+```bash
 cd ~/ros2_ws/src
 git clone <your_repo_url> grapheqa_ros2
 cd ..
 colcon build --symlink-install
 source install/setup.bash
-
-▶ Running
+```
+# ▶ Running
 
 Make sure the following are already running:
 
@@ -138,20 +139,20 @@ Nav2 stack
 Camera publishing /camera_pan_tilt/image
 
 Launch:
-
+```bash
 ros2 launch grapheqa_ros2 grapheqa.launch.py
-
+```
 
 Monitor planner output:
-
+```bash
 ros2 topic echo /grapheqa/decision
-
+```
 
 Monitor scene graph snapshots:
-
+```bash
 ros2 topic echo /grapheqa/dsg_snapshot
-
-🔄 Planning Loop
+```
+# 🔄 Planning Loop
 
 Hydra updates the scene graph
 
@@ -179,7 +180,7 @@ goto frontier → Nav2
 
 Loop continues until confidence threshold met
 
-The robot is capable of:
+# The robot is capable of:
 
 1.  Building a semantic 3D scene graph (Hydra)\
 2.  Detecting semantic exploration frontiers\
