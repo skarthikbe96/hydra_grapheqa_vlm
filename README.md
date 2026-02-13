@@ -32,7 +32,6 @@ It connects to:
 -   `navigate_to_pose` → Nav2 exploration
 
 
-
 ---
 
 # 📦 Core Components
@@ -108,6 +107,15 @@ It connects to:
 - pydantic
 - openai (or other VLM SDK)
 - cv_bridge
+
+## 🔗 Related Repositories
+
+- **Husky + Panda Simulation (Gazebo Harmonic)**  
+  https://github.com/skarthikbe96/panda_mounted_husky_sim
+
+- **Hydra SLAM Integration (ROS2 Jazzy)**  
+  https://github.com/skarthikbe96/husky_hydra_slam
+
 
 Install Python dependencies:
 
