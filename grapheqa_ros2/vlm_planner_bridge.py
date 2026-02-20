@@ -32,6 +32,7 @@ from typing import Optional, Dict, Any
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import String
+from geometry_msgs.msg import PoseArray
 
 
 @dataclass
@@ -63,7 +64,7 @@ class GrapheqaVLMPlannerBridge(Node):
         self.use_image = bool(self.declare_parameter("use_image", True).value)
         self.add_history = bool(self.declare_parameter("add_history", True).value)
 
-        self.question = self.declare_parameter("question", "What room is the couch in?").value
+        self.question = self.declare_parameter("question", "Find the fridge in the kitchen and navigate near it").value
         self.choices = self.declare_parameter(
             "choices", ["kitchen", "living room", "bedroom", "bathroom"]
         ).value
@@ -100,6 +101,19 @@ class GrapheqaVLMPlannerBridge(Node):
         self.timer = self.create_timer(1.0 / max(0.1, self.run_hz), self._tick)
 
         self.get_logger().info("[BRIDGE] GraphEQA VLM planner bridge ready.")
+
+        self._latest_frontiers = []  # IMPORTANT: initialize so tick won't crash
+
+        self.create_subscription(PoseArray, "/grapheqa/frontiers", self._on_frontiers, 10)
+       
+        
+    def _on_frontiers(self, msg: PoseArray):
+        # store as a simple list of xyz dicts (JSON-friendly)
+        self._latest_frontiers = [
+            {"x": p.position.x, "y": p.position.y, "z": p.position.z}
+            for p in msg.poses
+        ]
+
 
     # ===================== ROS callbacks =====================
     def _on_image_path(self, msg: String):
@@ -316,6 +330,8 @@ class GrapheqaVLMPlannerBridge(Node):
             "context": {
                 "latest_image_path": self._latest_image_path,
                 "dsg_snapshot": self._latest_dsg,
+                "frontiers": self._latest_frontiers,     # list of frontier points/clusters
+                "confidence_threshold": 0.7,             # ser
             },
         }
 

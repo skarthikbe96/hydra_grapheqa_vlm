@@ -40,7 +40,7 @@ def generate_launch_description():
         Node(
             package='grapheqa_ros2',
             executable='vlm_planner_bridge',   
-            name='vlm_planner',
+            name='vlm_planner_bridge',
             output='screen',
             parameters=[{
                 'output_dir': '/tmp/grapheqa_images',
@@ -55,7 +55,7 @@ def generate_launch_description():
                 'vlm_model_name': 'gpt-4o-mini',
                 'use_image': True,
                 'add_history': True,
-                'question': 'What room is the couch in?',
+                'question': 'Find the fridge in the kitchen and navigate near it',
                 'choices': ['kitchen', 'living room', 'bedroom', 'bathroom'],
                 'run_hz': 0.5,
             }]
