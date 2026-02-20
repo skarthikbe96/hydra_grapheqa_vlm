@@ -5,15 +5,13 @@ import json
 import os
 import sys
 import glob
-import tempfile
-from typing import Dict, List, Tuple, Optional
+from typing import Dict, List, Tuple, Optional, Any
 
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import String
 from tf2_ros import Buffer, TransformListener
 
-# Hydra message type
 try:
     from hydra_msgs.msg import DsgUpdate
 except Exception:
@@ -24,7 +22,6 @@ _LAYER_PRIORITY = ["object", "place", "room", "region", "building", "agent", "fr
 
 
 def _pick_best_layer(node_ids: List[str]) -> str:
-    """Choose a node_id from a list using a layer priority heuristic."""
     if len(node_ids) == 1:
         return node_ids[0]
 
@@ -39,20 +36,10 @@ def _pick_best_layer(node_ids: List[str]) -> str:
 
 
 def _patch_sys_path_for_spark_dsg(logger) -> bool:
-    """
-    Make Spark-DSG python bindings importable by adding ROS install prefixes
-    to sys.path (especially <ws>/install/spark_dsg/lib/pythonX.Y/site-packages).
-    Returns True if we added at least one plausible path.
-    """
     added_any = False
 
-    # 1) Try sibling install next to grapheqa_ros2 install:
-    # .../install/grapheqa_ros2/lib/pythonX/site-packages/grapheqa_ros2/dsg_bridge_node.py
-    # -> go up to .../install, then look for .../install/spark_dsg/lib/python*/site-packages
     here = os.path.abspath(__file__)
     install_root = here
-    # climb up until ".../install/<pkg>/..." becomes ".../install"
-    # (robust to different depths)
     for _ in range(10):
         install_root = os.path.dirname(install_root)
         if os.path.basename(install_root) == "install":
@@ -61,20 +48,16 @@ def _patch_sys_path_for_spark_dsg(logger) -> bool:
     candidate_prefixes = []
     if os.path.basename(install_root) == "install":
         candidate_prefixes.append(os.path.join(install_root, "spark_dsg"))
-        # also try the underlay install if sourced
-        # (we’ll add more prefixes below)
-    # 2) Also scan environment prefixes
+
     for envvar in ("AMENT_PREFIX_PATH", "CMAKE_PREFIX_PATH"):
         val = os.environ.get(envvar, "")
         for p in val.split(os.pathsep):
             p = p.strip()
             if not p:
                 continue
-            # p may be ".../install/spark_dsg" already OR ".../install"
             candidate_prefixes.append(p)
             candidate_prefixes.append(os.path.join(p, "spark_dsg"))
 
-    # de-dup while preserving order
     seen = set()
     prefixes = []
     for p in candidate_prefixes:
@@ -84,19 +67,15 @@ def _patch_sys_path_for_spark_dsg(logger) -> bool:
         seen.add(p)
         prefixes.append(p)
 
-    # For each prefix, add python site-packages if present
     for prefix in prefixes:
         if not os.path.isdir(prefix):
             continue
 
-        # common ROS python install location
         for sp in glob.glob(os.path.join(prefix, "lib", "python*", "site-packages")):
             if sp not in sys.path:
                 sys.path.insert(0, sp)
                 added_any = True
 
-        # sometimes people install the python package under "python/"
-        # (less common, but harmless to check)
         py_dir = os.path.join(prefix, "python")
         if os.path.isdir(py_dir) and py_dir not in sys.path:
             sys.path.insert(0, py_dir)
@@ -108,12 +87,9 @@ def _patch_sys_path_for_spark_dsg(logger) -> bool:
 
 
 def _try_import_spark_dsg(logger):
-    """
-    Try importing spark_dsg. If it fails, attempt to patch sys.path and retry.
-    Returns imported module or None.
-    """
     try:
         import spark_dsg as sdsg  # noqa: F401
+        logger.info(f"[DSG] spark_dsg imported from: {sdsg.__file__}")
         return sdsg
     except Exception as e1:
         logger.error(f"[DSG] spark_dsg import failed: {type(e1).__name__}: {e1}")
@@ -125,7 +101,7 @@ def _try_import_spark_dsg(logger):
 
     try:
         import spark_dsg as sdsg  # noqa: F401
-        logger.info("[DSG] spark_dsg import succeeded after sys.path patch.")
+        logger.info(f"[DSG] spark_dsg import succeeded after sys.path patch: {sdsg.__file__}")
         return sdsg
     except Exception as e2:
         logger.error(f"[DSG] spark_dsg import still failed after patch: {type(e2).__name__}: {e2}")
@@ -134,11 +110,12 @@ def _try_import_spark_dsg(logger):
 
 class DsgBridgeNode(Node):
     """
-    Subscribes to Hydra DSG (/hydra/backend/dsg) and publishes a compact JSON snapshot:
+    Subscribes to Hydra DSG (/hydra/backend/dsg) and publishes JSON snapshot on:
       /grapheqa/dsg_snapshot (std_msgs/String)
 
-    Hydra's /hydra/backend/dsg contains a binary-serialized Spark-DSG in msg.layer_contents.
-    We decode it using spark_dsg python bindings and export nodes/edges.
+    Key detail:
+      In your spark_dsg build, graph.layers() returns LayerView objects (not ids).
+      So we must iterate LayerView directly.
     """
 
     def __init__(self):
@@ -170,9 +147,10 @@ class DsgBridgeNode(Node):
         self._timer = self.create_timer(1.0, self._publish_agent_only_snapshot)
         self._last_snapshot_json: Optional[str] = None
 
-        # import spark_dsg once and keep it
         self._sdsg = _try_import_spark_dsg(self.get_logger())
         self._warned_no_sdsg = False
+
+        self._graph = None
 
     def _publish_agent_only_snapshot(self):
         if self._last_snapshot_json is not None:
@@ -181,7 +159,6 @@ class DsgBridgeNode(Node):
         self._pub.publish(String(data=json.dumps(snap)))
 
     def _build_snapshot(self, nodes: Dict, edges: List[Tuple[str, str, str]]) -> dict:
-        # Always inject agent from TF (map -> base)
         try:
             t = self._tf_buffer.lookup_transform(self._world_frame, self._base_frame, rclpy.time.Time())
             agent_xyz = (
@@ -201,14 +178,186 @@ class DsgBridgeNode(Node):
             "edges": [{"src": s, "dst": d, "type": t} for (s, d, t) in edges],
         }
 
+    @staticmethod
+    def _layer_name_guess(layer_id: int) -> str:
+        mapping = {
+            1: "mesh",
+            2: "object",
+            3: "place",
+            4: "room",
+            5: "building",
+            6: "agent",
+            7: "frontier",
+        }
+        return mapping.get(int(layer_id), f"layer{int(layer_id)}")
+
+    @staticmethod
+    def _node_raw_id(n) -> Optional[int]:
+        try:
+            return int(n.id.value)
+        except Exception:
+            pass
+        try:
+            return int(n.id)
+        except Exception:
+            pass
+        return None
+
+    @staticmethod
+    def _vec3_to_list(v) -> Optional[List[float]]:
+        try:
+            return [float(v.x), float(v.y), float(v.z)]
+        except Exception:
+            pass
+        try:
+            arr = list(v)
+            if len(arr) >= 3:
+                return [float(arr[0]), float(arr[1]), float(arr[2])]
+        except Exception:
+            pass
+        return None
+
+    def _node_pos(self, n) -> Optional[List[float]]:
+        a = getattr(n, "attributes", None)
+        if a is None:
+            return None
+
+        for path in [
+            ("position",),
+            ("world_pose", "position"),
+            ("pose", "position"),
+            ("centroid",),
+            ("center",),
+            ("bbox", "center"),
+            ("bounding_box", "center"),
+            ("aabb", "center"),
+        ]:
+            obj = a
+            ok = True
+            for key in path:
+                if not hasattr(obj, key):
+                    ok = False
+                    break
+                obj = getattr(obj, key)
+            if not ok:
+                continue
+            v = self._vec3_to_list(obj)
+            if v is not None:
+                return v
+        return None
+
+    @staticmethod
+    def _node_name(n, fallback: str) -> str:
+        a = getattr(n, "attributes", None)
+        if a is None:
+            return fallback
+        for attr in ("name", "label", "semantic_label", "category", "class_name"):
+            try:
+                v = getattr(a, attr)
+                if isinstance(v, str) and v:
+                    return v
+            except Exception:
+                pass
+        return fallback
+
+    def _decode_graph(self, msg, raw_bytes: bytes):
+        DSG = getattr(self._sdsg, "DynamicSceneGraph", None)
+        if DSG is None:
+            from spark_dsg import _dsg_bindings
+            DSG = _dsg_bindings.DynamicSceneGraph
+
+        if bool(msg.full_update):
+            if hasattr(DSG, "from_binary"):
+                self._graph = DSG.from_binary(raw_bytes)
+            else:
+                self._graph = DSG()
+                try:
+                    self._graph.update_from_binary(raw_bytes)
+                except TypeError:
+                    self._graph.update_from_binary(raw_bytes, False)
+        else:
+            if self._graph is None:
+                self._graph = DSG()
+            try:
+                self._graph.update_from_binary(raw_bytes)
+            except TypeError:
+                self._graph.update_from_binary(raw_bytes, False)
+
+        return self._graph
+
+    def _iter_layers(self, graph) -> List[Any]:
+        # 1) layers() method
+        if hasattr(graph, "layers"):
+            try:
+                layers_obj = graph.layers
+                if callable(layers_obj):
+                    return list(layers_obj())     # graph.layers()
+                else:
+                    return list(layers_obj)       # graph.layers (property)
+            except Exception:
+                pass
+
+        # 2) get_layers() method (some builds)
+        if hasattr(graph, "get_layers"):
+            try:
+                return list(graph.get_layers())
+            except Exception:
+                pass
+
+        # 3) layer_ids + get_layer fallback
+        if hasattr(graph, "layer_ids"):
+            try:
+                lids = list(graph.layer_ids)
+                out = []
+                for lid in lids:
+                    try:
+                        out.append(graph.get_layer(lid))
+                    except Exception:
+                        pass
+                return out
+            except Exception:
+                pass
+
+        return []
+
+    def _iter_nodes_from_layer(self, layer) -> List[Any]:
+        """
+        LayerView in your build seems to have `.nodes` iterable.
+        """
+        if hasattr(layer, "nodes"):
+            try:
+                return list(layer.nodes)
+            except Exception:
+                pass
+        # fallback
+        for fn in ("get_nodes", "nodes_iter"):
+            if hasattr(layer, fn):
+                try:
+                    return list(getattr(layer, fn)())
+                except Exception:
+                    pass
+        return []
+
+    def _layer_id_from_layerview(self, layer, fallback_idx: int) -> int:
+        """
+        Try to extract numeric layer id from LayerView.
+        Common patterns: layer.id or layer.layer_id
+        """
+        for attr in ("id", "layer_id"):
+            if hasattr(layer, attr):
+                try:
+                    return int(getattr(layer, attr))
+                except Exception:
+                    pass
+        # fallback: map based on order (not perfect but better than nothing)
+        return fallback_idx + 1
+
     def _on_dsg(self, msg):
-        # If spark_dsg isn't available, publish agent-only but don't spam every callback
         if self._sdsg is None:
             if not self._warned_no_sdsg:
                 self.get_logger().error(
-                    "[DSG] spark_dsg python module not available in this runtime environment. "
-                    "Fix by sourcing the workspace that installed spark_dsg, or ensure its "
-                    "lib/pythonX.Y/site-packages is on PYTHONPATH."
+                    "[DSG] spark_dsg python module not available. "
+                    "Source the workspace that installed spark_dsg."
                 )
                 self._warned_no_sdsg = True
             snapshot = self._build_snapshot(nodes={}, edges=[])
@@ -218,16 +367,14 @@ class DsgBridgeNode(Node):
             return
 
         if not hasattr(msg, "layer_contents") or msg.layer_contents is None:
-            self.get_logger().warn("[DSG] msg has no layer_contents; publishing agent-only snapshot")
             snapshot = self._build_snapshot(nodes={}, edges=[])
             js = json.dumps(snapshot)
             self._last_snapshot_json = js
             self._pub.publish(String(data=js))
             return
 
-        # Convert layer_contents -> bytes
         try:
-            raw = bytes(msg.layer_contents)
+            raw_bytes = msg.layer_contents.tobytes() if hasattr(msg.layer_contents, "tobytes") else bytes(msg.layer_contents)
         except Exception as e:
             self.get_logger().error(f"[DSG] Failed to convert layer_contents to bytes: {e}")
             snapshot = self._build_snapshot(nodes={}, edges=[])
@@ -236,120 +383,88 @@ class DsgBridgeNode(Node):
             self._pub.publish(String(data=js))
             return
 
-        # Spark-DSG python API expects a filepath for load(), so write a temp file
-        # try:
-        #     with tempfile.NamedTemporaryFile(prefix="hydra_dsg_", suffix=".sparkdsg", delete=True) as f:
-        #         f.write(raw)
-        #         f.flush()
-        #         DSG = getattr(self._sdsg, "DynamicSceneGraph", None)
-        #         if DSG is None:
-        #             from spark_dsg import _dsg_bindings
-        #             DSG = _dsg_bindings.DynamicSceneGraph
-        #         graph = DSG.load(f.name)
-
-        # except Exception as e:
-        #     self.get_logger().error(f"[DSG] Spark-DSG deserialize/load failed: {e}")
-        #     snapshot = self._build_snapshot(nodes={}, edges=[])
-        #     js = json.dumps(snapshot)
-        #     self._last_snapshot_json = js
-        #     self._pub.publish(String(data=js))
-        #     return
-
-        # Decode Hydra DSG bytes (these are Spark-DSG io::binary bytes)
         try:
-            DSG = getattr(self._sdsg, "DynamicSceneGraph", None)
-            if DSG is None:
-                from spark_dsg import _dsg_bindings
-                DSG = _dsg_bindings.DynamicSceneGraph
-
-            # Keep a graph object and update it each message (more efficient)
-            # Keep a graph object and update it each message
-            if not hasattr(self, "_graph") or self._graph is None:
-                self._graph = DSG()  # start empty
-
-            # DsgUpdate.layer_contents is an update stream; apply it
-            # If full_update is True, remove stale nodes not present in this update
-            self._graph.update_from_binary(raw, bool(msg.full_update))
-            graph = self._graph            
-
+            graph = self._decode_graph(msg, raw_bytes)
         except Exception as e:
-            self.get_logger().error(f"[DSG] Spark-DSG update_from_binary failed: {e}")
+            self.get_logger().error(f"[DSG] Spark-DSG decode failed: {e}")
+            self.get_logger().error(
+                f"[DSG] Debug: layer_contents type={type(msg.layer_contents)} len={len(msg.layer_contents)} full_update={bool(msg.full_update)}"
+            )
             snapshot = self._build_snapshot(nodes={}, edges=[])
             js = json.dumps(snapshot)
             self._last_snapshot_json = js
             self._pub.publish(String(data=js))
             return
 
-
-
-        # Export nodes
         nodes: Dict[str, dict] = {}
         edges: List[Tuple[str, str, str]] = []
 
-        def layer_name_from_id(lid: int) -> str:
-            return {
-                2: "object",
-                3: "place",
-                4: "room",
-                5: "building",
-            }.get(int(lid), f"layer{int(lid)}")
+        layers = self._iter_layers(graph)
 
         try:
-            layer_ids = list(graph.layers())
+            self.get_logger().info(f"[DSG] graph.layers attr type={type(getattr(graph,'layers',None))} callable={callable(getattr(graph,'layers',None))}")
         except Exception:
-            layer_ids = [2, 3, 4, 5]
+            pass
+        self.get_logger().info(f"[DSG] layers() -> {layers}")
 
-        for lid in layer_ids:
-            try:
-                layer = graph.get_layer(lid)
-            except Exception:
-                continue
+        # Case A: layers are LayerView objects
+        if layers and "LayerView" in str(type(layers[0])):
+            for i, layer in enumerate(layers):
+                layer_id = self._layer_id_from_layerview(layer, i)
+                lname = self._layer_name_guess(layer_id)
+                ln_nodes = self._iter_nodes_from_layer(layer)
 
-            lname = layer_name_from_id(int(lid))
+                self.get_logger().info(f"[DSG] layer {layer_id} ({lname}) nodes={len(ln_nodes)}")
 
-            # NOTE: Spark-DSG python uses "layer.nodes" (iterable), not "layer.nodes()"
-            try:
-                for n in layer.nodes:
-                    try:
-                        raw_id = int(n.id.value)
-                    except Exception:
-                        try:
-                            raw_id = int(n.id)
-                        except Exception:
-                            continue
-
-                    node_id = f"{lname}_{raw_id}"
-
-                    # position
-                    try:
-                        p = n.attributes.position
-                        pos = [float(p.x), float(p.y), float(p.z)]
-                    except Exception:
+                for n in ln_nodes:
+                    rid = self._node_raw_id(n)
+                    if rid is None:
                         continue
-
-                    # semantic name/label (chair/table/etc.)
-                    nm = ""
-                    for attr in ("name", "label", "semantic_label"):
-                        try:
-                            v = getattr(n.attributes, attr)
-                            if isinstance(v, str) and v:
-                                nm = v
-                                break
-                        except Exception:
-                            pass
-
+                    pos = self._node_pos(n)
+                    if pos is None:
+                        continue
+                    node_id = f"{lname}_{rid}"
                     nodes[node_id] = {
                         "id": node_id,
-                        "name": nm or lname,
+                        "name": self._node_name(n, lname),
                         "pos": pos,
                         "layer": lname,
                     }
-            except Exception:
-                continue
 
-        # Optional: edges (best-effort; different builds expose different iterators)
+        # Case B: layers are numeric IDs
+        else:
+            for lid in layers:
+                try:
+                    lname = self._layer_name_guess(int(lid))
+                except Exception:
+                    lname = str(lid)
+
+                try:
+                    layer = graph.get_layer(lid)
+                except Exception:
+                    continue
+
+                ln_nodes = self._iter_nodes_from_layer(layer)
+                self.get_logger().info(f"[DSG] layer {lid} ({lname}) nodes={len(ln_nodes)}")
+
+                for n in ln_nodes:
+                    rid = self._node_raw_id(n)
+                    if rid is None:
+                        continue
+                    pos = self._node_pos(n)
+                    if pos is None:
+                        continue
+                    node_id = f"{lname}_{rid}"
+                    nodes[node_id] = {
+                        "id": node_id,
+                        "name": self._node_name(n, lname),
+                        "pos": pos,
+                        "layer": lname,
+                    }
+
+        # Edges: best-effort (may differ per binding)
         try:
-            for e in graph.edges:
+            for e in getattr(graph, "edges", []):
                 try:
                     s = str(int(e.source.value))
                 except Exception:
@@ -363,7 +478,7 @@ class DsgBridgeNode(Node):
         except Exception:
             pass
 
-        # Map raw numeric edge endpoints -> prefixed node ids
+        # Map raw endpoints -> prefixed ids
         raw_to_node_ids: Dict[str, List[str]] = {}
         for nid in nodes.keys():
             parts = nid.split("_", 1)
@@ -383,10 +498,10 @@ class DsgBridgeNode(Node):
             s2 = resolve_endpoint(s)
             d2 = resolve_endpoint(d)
             if s2 and d2:
-                fixed_edges.append((s2, d2, "link"))
+                fixed_edges.append((s2, d2, t))
         edges = fixed_edges
 
-        self.get_logger().info(f"[DSG] Publishing snapshot nodes={len(nodes)} edges={len(edges)}")
+        self.get_logger().info(f"[DSG] Publishing snapshot nodes={len(nodes)} edges={len(edges)} full_update={bool(msg.full_update)}")
 
         snapshot = self._build_snapshot(nodes=nodes, edges=edges)
         js = json.dumps(snapshot)
