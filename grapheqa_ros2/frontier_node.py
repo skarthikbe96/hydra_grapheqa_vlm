@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 from collections import deque
 from typing import List, Tuple
 
@@ -5,6 +7,8 @@ import rclpy
 from rclpy.node import Node
 from nav_msgs.msg import OccupancyGrid
 from geometry_msgs.msg import PoseArray, Pose
+from rclpy.qos import QoSProfile, ReliabilityPolicy, DurabilityPolicy
+
 
 class FrontierNode(Node):
     def __init__(self):
@@ -19,7 +23,12 @@ class FrontierNode(Node):
         self._cluster_min_size = int(self.get_parameter('cluster_min_size').value)
 
         self._pub = self.create_publisher(PoseArray, '/grapheqa/frontiers', 10)
-        self._sub = self.create_subscription(OccupancyGrid, self._map_topic, self._on_map, 10)
+        qos_map = QoSProfile(depth=1)
+        qos_map.reliability = ReliabilityPolicy.RELIABLE
+        qos_map.durability = DurabilityPolicy.TRANSIENT_LOCAL
+        self._sub = self.create_subscription(OccupancyGrid, self._map_topic, self._on_map, qos_map)
+
+
 
         self.get_logger().info(f"Listening map: {self._map_topic} publishing /grapheqa/frontiers")
 

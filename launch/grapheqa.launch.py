@@ -36,24 +36,57 @@ def generate_launch_description():
                 'save_hz': 1.0,
             }]
         ),
+
         Node(
             package='grapheqa_ros2',
-            executable='vlm_planner',
+            executable='vlm_planner_bridge',   
             name='vlm_planner',
             output='screen',
             parameters=[{
                 'output_dir': '/tmp/grapheqa_images',
-                # GraphEQA VLM config:
-                'vlm_model_name': 'gpt-4o-mini',  # change to your model
+
+                # Conda server params:
+                'conda_base': '/home/rebellion/anaconda3/bin/conda',
+                'conda_env': 'grapheqa',
+                'env_python': '/home/rebellion/anaconda3/envs/grapheqa/bin/python', 
+                'server_script': '/home/rebellion/mobile_robotics/graph_eqa_ws/src/grapheqa_ros2/grapheqa_ros2/grapheqa_infer_server.py',
+
+                # Planner params:
+                'vlm_model_name': 'gpt-4o-mini',
                 'use_image': True,
                 'add_history': True,
-                # Question inputs (for quick testing):
                 'question': 'What room is the couch in?',
                 'choices': ['kitchen', 'living room', 'bedroom', 'bathroom'],
-                'pred_candidates': ['A', 'B', 'C', 'D'],
-                'gt_answer': 'B',
+                'run_hz': 0.5,
             }]
         ),
+
+        Node(
+            package="grapheqa_ros2",
+            executable="plan_result_to_decision",
+            name="plan_result_to_decision",
+            output="screen",
+        ),
+
+
+        # Node(
+        #     package='grapheqa_ros2',
+        #     executable='vlm_planner',
+        #     name='vlm_planner',
+        #     output='screen',
+        #     parameters=[{
+        #         'output_dir': '/tmp/grapheqa_images',
+        #         # GraphEQA VLM config:
+        #         'vlm_model_name': 'gpt-4o-mini',  # change to your model
+        #         'use_image': True,
+        #         'add_history': True,
+        #         # Question inputs (for quick testing):
+        #         'question': 'What room is the couch in?',
+        #         'choices': ['kitchen', 'living room', 'bedroom', 'bathroom'],
+        #         'pred_candidates': ['A', 'B', 'C', 'D'],
+        #         'gt_answer': 'B',
+        #     }]
+        # ),
         Node(
             package='grapheqa_ros2',
             executable='executor',

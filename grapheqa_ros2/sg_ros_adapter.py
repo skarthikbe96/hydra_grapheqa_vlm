@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 # grapheqa_ros2/sg_ros_adapter.py
 
 import json

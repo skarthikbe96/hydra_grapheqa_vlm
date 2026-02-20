@@ -1,3 +1,6 @@
+
+#!/usr/bin/env python3
+
 import json
 import pathlib
 from typing import List, Tuple
@@ -10,7 +13,9 @@ from geometry_msgs.msg import PoseArray
 from .sg_ros_adapter import SceneGraphRosAdapter, NodeData
 
 # Import GraphEQA planner (unchanged)
-from graph_eqa.planners.vlm_planner_gpt import VLMPlannerEQAGPT
+from grapheqa_ros2.graph_eqa.graph_eqa.planners.vlm_planner_gpt import VLMPlannerEQAGPT
+from grapheqa_ros2.graph_eqa.graph_eqa.scene_graph.scene_graph_sim import SceneGraphSim
+
 
 class VlmPlannerNode(Node):
     def __init__(self):

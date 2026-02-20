@@ -1,0 +1,22 @@
+from setuptools import find_packages, setup
+setup(
+    name='graph_eqa',
+    version='0.1.0',
+    packages=find_packages(),
+    install_requires=[
+        "imageio",
+        "omegaconf", 
+        "rerun-sdk",
+        "opencv-python",
+        "openai", 
+        "transformers",
+        "scikit-image",
+        "yacs",
+        "networkx",
+        "SentencePiece",
+        "anthropic",
+        "google-generativeai",
+        "together"
+    ],
+    include_package_data=True,
+)
